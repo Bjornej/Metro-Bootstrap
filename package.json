@@ -1,0 +1,6 @@
+{
+  "volo": {
+    "dependencies": {
+      "Font-Awesome": "github:FortAwesome/Font-Awesome/v3.0.2"  }
+  }
+}
