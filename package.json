@@ -1,6 +1,9 @@
 {
+  "name": "Metro-Bootstrap", 
+  "version" : "0.0.1",
   "volo": {
     "dependencies": {
-      "Font-Awesome": "github:FortAwesome/Font-Awesome/v3.0.2"  }
+      "Font-Awesome": "github:FortAwesome/Font-Awesome/v3.0.2"  
+     }
   }
 }
