@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     sass: {                                 // Task
         dist: {                             // Target
             files: {                        // Dictionary of files
-                'metro.css': 'sass/MetroBootstrap.scss'   // 'destination': 'source'
+                'site/metro.css': 'sass/MetroBootstrap.scss'   // 'destination': 'source'
             }
         }
     },
