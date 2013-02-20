@@ -1,0 +1,22 @@
+.navbar {
+
+	margin-bottom: $baseLineHeight;
+	overflow: visible;
+
+
+	// Fix for IE7's bad z-indexing so dropdowns don't appear below content that follows the navbar
+	*position: relative;
+	*z-index: 2;
+}
+
+.navbar-inner {
+  min-height: $navbarHeight;
+  padding-left:  20px;
+  padding-right: 20px;
+  background-color: $navbarColor;
+  color: $navbarTextColor;
+
+
+  // Prevent floats from breaking the navbar
+  @include clearfix;
+}
