@@ -6,9 +6,21 @@ $baseLineHeight: 20px;
 $baseColor: #094AB2;
 
 
+//dropdown
+//====================
+$dropdownBorder: $baseColor;
+$dropdownBackground: White;
+
 // Navbar
 //====================
 
 $navbarHeight:40px;
 $navbarColor: $baseColor;
 $navbarTextColor: White;
+$navbarBrandColor: White;
+$navbarBackgroundHighlight: #eee;
+$navbarLinkColor: White;
+$navbarLinkColorActive: White;
+$navbarLinkColorHover: White;
+$navbarLinkBackgroundHover: White;
+$navbarLinkBackgroundActive: White;
