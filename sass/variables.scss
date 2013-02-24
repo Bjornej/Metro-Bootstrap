@@ -24,3 +24,10 @@ $navbarLinkColorActive: White;
 $navbarLinkColorHover: White;
 $navbarLinkBackgroundHover: darken($navbarColor,5%);
 $navbarLinkBackgroundActive: darken($navbarColor,7%);
+
+
+//Sidebar
+//====================
+$sideBarBackground:#f3f3f3;
+$sideBarWidth:200px;
+$sidebarSeparatorColor:darken($sideBarBackground,10%);

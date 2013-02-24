@@ -1,0 +1,16 @@
+.sidebar{
+	background-color:$sideBarBackground;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	width:$sideBarWidth;
+	z-index:-1;
+	height:100%;
+	padding-top:$baseLineHeight;
+
+	> hr {
+		width:85%;
+		color:$sidebarSeparatorColor;
+	}
+}
