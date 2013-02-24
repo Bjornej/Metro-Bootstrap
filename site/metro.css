@@ -337,7 +337,7 @@ table {
   float: right; }
 
 body {
-  font-family: "Segoe UI", "Segoe UI Web Regular", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif; }
+  font-family: "Segoe UI Light", "Open Sans", Verdana, Arial, Helvetica, sans-serif; }
 
 @font-face {
   font-family: 'FontAwesome';
@@ -1132,7 +1132,8 @@ body {
     margin-left: -20px;
     font-size: 20px;
     font-weight: 200;
-    color: white; }
+    color: white;
+    min-width: 100px; }
     .navbar .brand:hover, .navbar .brand:focus {
       text-decoration: none; }
   .navbar .divider-vertical {
@@ -1142,7 +1143,7 @@ body {
     border-right: 1px solid #eeeeee; }
   .navbar .navbar-text {
     margin: 0;
-    padding: 10px 15px 10px; }
+    padding: 9px 15px 10px; }
   .navbar .nav {
     position: relative;
     left: 0;
@@ -1269,24 +1270,29 @@ body {
   width: 180px;
   z-index: -1;
   height: 100%; }
-  .sidebar .sidebar-inner {
+  .sidebar .sidebar-inner, .sidebar .sidebar-inner.pull-down {
     padding-top: 40px; }
-    .sidebar .sidebar-inner > hr {
+    .sidebar .sidebar-inner > hr, .sidebar .sidebar-inner.pull-down > hr {
       width: 85%;
       color: #d9d9d9; }
-    .sidebar .sidebar-inner > ul {
+    .sidebar .sidebar-inner > ul, .sidebar .sidebar-inner.pull-down > ul {
       padding: 0;
       margin-top: 0; }
-      .sidebar .sidebar-inner > ul > li {
+      .sidebar .sidebar-inner > ul > li, .sidebar .sidebar-inner.pull-down > ul > li {
         list-style: none;
         font-size: 21px;
         padding: 4px 12px; }
-        .sidebar .sidebar-inner > ul > li.active {
+        .sidebar .sidebar-inner > ul > li.active, .sidebar .sidebar-inner.pull-down > ul > li.active {
           background-color: #d4d4d4; }
-        .sidebar .sidebar-inner > ul > li > ul {
+        .sidebar .sidebar-inner > ul > li > ul, .sidebar .sidebar-inner.pull-down > ul > li > ul {
           padding-left: 10px;
           margin: 0; }
-          .sidebar .sidebar-inner > ul > li > ul > li {
+          .sidebar .sidebar-inner > ul > li > ul > li, .sidebar .sidebar-inner.pull-down > ul > li > ul > li {
             list-style: none;
             font-size: 14px;
             margin: 4px 0; }
+  .sidebar .pull-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }

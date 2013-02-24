@@ -8,8 +8,9 @@
 	width:$sideBarWidth;
 	z-index:-1;
 	height:100%;
-	.sidebar-inner{
+	.sidebar-inner, .sidebar-inner.pull-down{
 		padding-top:$navbarHeight;
+
 		> hr {
 			width:85%;
 			color:$sidebarSeparatorColor;
@@ -37,4 +38,12 @@
 			}
 		}
 	}
+
+	.pull-down{
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+	}
+
 }
