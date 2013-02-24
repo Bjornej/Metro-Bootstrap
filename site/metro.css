@@ -336,6 +336,9 @@ table {
 .pull-right {
   float: right; }
 
+body {
+  font-family: "Segoe UI", "Segoe UI Web Regular", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif; }
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("../Font-Awesome/font/fontawesome-webfont.eot?v=3.0.1");
@@ -1125,7 +1128,7 @@ table {
   .navbar .brand {
     float: left;
     display: block;
-    padding: 8px 20px 8px;
+    padding: 6px 20px 6px;
     margin-left: -20px;
     font-size: 20px;
     font-weight: 200;
@@ -1262,10 +1265,28 @@ table {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 200px;
+  padding: 0px;
+  width: 180px;
   z-index: -1;
-  height: 100%;
-  padding-top: 20px; }
-  .sidebar > hr {
-    width: 85%;
-    color: #d9d9d9; }
+  height: 100%; }
+  .sidebar .sidebar-inner {
+    padding-top: 40px; }
+    .sidebar .sidebar-inner > hr {
+      width: 85%;
+      color: #d9d9d9; }
+    .sidebar .sidebar-inner > ul {
+      padding: 0;
+      margin-top: 0; }
+      .sidebar .sidebar-inner > ul > li {
+        list-style: none;
+        font-size: 21px;
+        padding: 4px 12px; }
+        .sidebar .sidebar-inner > ul > li.active {
+          background-color: #d4d4d4; }
+        .sidebar .sidebar-inner > ul > li > ul {
+          padding-left: 10px;
+          margin: 0; }
+          .sidebar .sidebar-inner > ul > li > ul > li {
+            list-style: none;
+            font-size: 14px;
+            margin: 4px 0; }

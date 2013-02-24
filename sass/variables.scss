@@ -29,5 +29,7 @@ $navbarLinkBackgroundActive: darken($navbarColor,7%);
 //Sidebar
 //====================
 $sideBarBackground:#f3f3f3;
-$sideBarWidth:200px;
+$sideBarWidth:180px;
+$sideBarFirstLevelFontSize : 21px;
 $sidebarSeparatorColor:darken($sideBarBackground,10%);
+$activeOptionColor: rgb(212, 212, 212);

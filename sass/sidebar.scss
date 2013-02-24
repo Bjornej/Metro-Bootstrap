@@ -4,13 +4,37 @@
 	top:0;
 	bottom:0;
 	left:0;
+	padding:0px;
 	width:$sideBarWidth;
 	z-index:-1;
 	height:100%;
-	padding-top:$baseLineHeight;
+	.sidebar-inner{
+		padding-top:$navbarHeight;
+		> hr {
+			width:85%;
+			color:$sidebarSeparatorColor;
+		}
 
-	> hr {
-		width:85%;
-		color:$sidebarSeparatorColor;
+		> ul {
+			padding:0;
+			margin-top:0;
+			> li {
+				list-style:none;
+				font-size:$sideBarFirstLevelFontSize;
+				padding:4px 12px;
+				&.active{
+					background-color:$activeOptionColor;
+				}
+				> ul {
+					padding-left:10px;
+					margin:0;
+					> li {
+						list-style:none;
+						font-size:$baseFontSize;
+						margin:4px 0;
+					}
+				}
+			}
+		}
 	}
 }

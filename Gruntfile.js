@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 
     watch: {
       sass: {
-        files: ['sass/MetroBootstrap.scss','sass/navbar.scss','sass/reset.scss'],
+        files: ['sass/*.scss'],
         tasks: ['sass']
       }
     }
@@ -22,6 +22,7 @@ module.exports = function(grunt) {
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
   grunt.registerTask('default', ['sass']);
