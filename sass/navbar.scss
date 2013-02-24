@@ -52,51 +52,11 @@
   border-right: 1px solid $navbarBackgroundHighlight;
 }
 
-// Static navbar
-// -------------------------
 
-.navbar-static-top {
-  position: static;
-  margin-bottom: 0; 
+.navbar .navbar-text{
+  margin: 0;
+      padding: (($navbarHeight - $baseLineHeight) / 2) 15px (($navbarHeight - $baseLineHeight) / 2);
 }
-
-
-// Fixed navbar
-// -------------------------
-
-// Shared (top/bottom) styles
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0;
-}
-.navbar-fixed-top .navbar-inner,
-.navbar-static-top .navbar-inner {
-  border-width: 0 0 1px;
-}
-.navbar-fixed-bottom .navbar-inner {
-  border-width: 1px 0 0;
-}
-.navbar-fixed-top .navbar-inner,
-.navbar-fixed-bottom .navbar-inner {
-  padding-left:  0;
-  padding-right: 0;
-}
-
-
-// Fixed to top
-.navbar-fixed-top {
-  top: 0;
-}
-
-
-// Fixed to bottom
-.navbar-fixed-bottom {
-  bottom: 0;
-}
-
-
 
 // NAVIGATION
 // ----------
@@ -107,6 +67,7 @@
   display: block;
   float: left;
   margin: 0 10px 0 0;
+  height: $navbarHeight;
 }
 .navbar .nav.pull-right {
   float: right; // redeclare due to specificity
@@ -114,16 +75,19 @@
 }
 .navbar .nav > li {
   float: left;
+  list-style: none;
+  height: $navbarHeight;
 }
 
 // Links
 .navbar .nav > li > a {
   float: none;
   // Vertically center the text
-  padding: (($navbarHeight - $baseLineHeight) / 2) 15px (($navbarHeight - $baseLineHeight) / 2);
+    padding: (($navbarHeight - $baseLineHeight) / 2) 15px (($navbarHeight - $baseLineHeight) / 2);
   color: $navbarLinkColor;
   text-decoration: none;
-  text-shadow: 0 1px 0 $navbarBackgroundHighlight;
+  display: block;
+  height:$baseLineHeight;
 }
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
@@ -172,22 +136,6 @@
     position: absolute;
     top: -6px;
     left: 10px;
-  }
-}
-// Menu position and menu caret support for dropups via extra dropup class
-.navbar-fixed-bottom .nav > li > .dropdown-menu {
-  &:before {
-    border-top: 7px solid #ccc;
-    border-top-color: $dropdownBorder;
-    border-bottom: 0;
-    bottom: -7px;
-    top: auto;
-  }
-  &:after {
-    border-top: 6px solid $dropdownBackground;
-    border-bottom: 0;
-    bottom: -6px;
-    top: auto;
   }
 }
 

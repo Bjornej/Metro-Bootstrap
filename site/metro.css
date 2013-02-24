@@ -376,61 +376,41 @@ table {
   border-left: 1px solid #094ab2;
   border-right: 1px solid #eeeeee; }
 
-.navbar-static-top {
-  position: static;
-  margin-bottom: 0; }
-
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: 0; }
-
-.navbar-fixed-top .navbar-inner,
-.navbar-static-top .navbar-inner {
-  border-width: 0 0 1px; }
-
-.navbar-fixed-bottom .navbar-inner {
-  border-width: 1px 0 0; }
-
-.navbar-fixed-top .navbar-inner,
-.navbar-fixed-bottom .navbar-inner {
-  padding-left: 0;
-  padding-right: 0; }
-
-.navbar-fixed-top {
-  top: 0; }
-
-.navbar-fixed-bottom {
-  bottom: 0; }
+.navbar .navbar-text {
+  margin: 0;
+  padding: 10px 15px 10px; }
 
 .navbar .nav {
   position: relative;
   left: 0;
   display: block;
   float: left;
-  margin: 0 10px 0 0; }
+  margin: 0 10px 0 0;
+  height: 40px; }
 
 .navbar .nav.pull-right {
   float: right;
   margin-right: 0; }
 
 .navbar .nav > li {
-  float: left; }
+  float: left;
+  list-style: none;
+  height: 40px; }
 
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
   color: white;
   text-decoration: none;
-  text-shadow: 0 1px 0 #eeeeee; }
+  display: block;
+  height: 20px; }
 
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px; }
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  background-color: white;
+  background-color: #08409a;
   color: white;
   text-decoration: none; }
 
@@ -439,7 +419,7 @@ table {
 .navbar .nav > .active > a:focus {
   color: white;
   text-decoration: none;
-  background-color: white; }
+  background-color: #073c90; }
 
 .navbar .nav > li > .dropdown-menu:before {
   content: '';
@@ -461,18 +441,6 @@ table {
   top: -6px;
   left: 10px; }
 
-.navbar-fixed-bottom .nav > li > .dropdown-menu:before {
-  border-top: 7px solid #cccccc;
-  border-top-color: #094ab2;
-  border-bottom: 0;
-  bottom: -7px;
-  top: auto; }
-.navbar-fixed-bottom .nav > li > .dropdown-menu:after {
-  border-top: 6px solid white;
-  border-bottom: 0;
-  bottom: -6px;
-  top: auto; }
-
 .navbar .nav li.dropdown > a:hover .caret,
 .navbar .nav li.dropdown > a:focus .caret {
   border-top-color: white;
@@ -481,7 +449,7 @@ table {
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: white;
+  background-color: #073c90;
   color: white; }
 
 .navbar .nav li.dropdown > .dropdown-toggle .caret {

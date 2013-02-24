@@ -22,5 +22,5 @@ $navbarBackgroundHighlight: #eee;
 $navbarLinkColor: White;
 $navbarLinkColorActive: White;
 $navbarLinkColorHover: White;
-$navbarLinkBackgroundHover: White;
-$navbarLinkBackgroundActive: White;
+$navbarLinkBackgroundHover: darken($navbarColor,5%);
+$navbarLinkBackgroundActive: darken($navbarColor,7%);

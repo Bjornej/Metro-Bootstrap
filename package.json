@@ -4,7 +4,8 @@
   "volo": {
     "dependencies": {
       "Font-Awesome": "github:FortAwesome/Font-Awesome/v3.0.2",
-      "jqueryui": "github:daffl/jqueryui/1.8.7"
+      "jqueryui": "github:daffl/jqueryui/1.8.7",
+      "jquery": "github:jquery/jquery/1.9.1"
     }
   },
   "devDependencies": {
