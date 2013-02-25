@@ -1296,3 +1296,70 @@ body {
     bottom: 0;
     left: 0;
     right: 0; }
+
+.main {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; }
+  .main .main-inner {
+    padding-left: 180px;
+    padding-top: 40px; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+  border-color: #dddddd; }
+  table thead td, table thead th {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-bottom: 1px #dddddd solid;
+    border-right: 1px #dddddd solid;
+    border-left: 1px transparent solid;
+    border-top: 1px transparent solid;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    font-weight: 600; }
+    table thead td:last-child, table thead th:last-child {
+      border-right: 1px transparent solid; }
+  table tbody tr {
+    border: 1px white solid; }
+    table tbody tr td, table tbody tr th {
+      display: table-cell;
+      vertical-align: bottom;
+      padding-bottom: 5px;
+      padding-top: 10px;
+      padding-left: 5px;
+      border-bottom: 1px #dddddd solid;
+      border-right: 1px #dddddd solid;
+      border-left: 1px transparent solid;
+      border-top: 1px transparent solid;
+      letter-spacing: 0.01em;
+      color: rgba(0, 0, 0, 0.6);
+      text-align: left; }
+      table tbody tr td:last-child, table tbody tr th:last-child {
+        border-right: 1px transparent solid; }
+  table.table-striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; }
+  table.table-bordered tbody tr td, table.table-bordered tbody tr th, table.table-bordered thead tr td, table.table-bordered thead tr th {
+    border-left: 1px #dddddd solid;
+    border-right: 1px #dddddd solid;
+    border-top: 1px #dddddd solid; }
+    table.table-bordered tbody tr td :last-child, table.table-bordered tbody tr th :last-child, table.table-bordered thead tr td :last-child, table.table-bordered thead tr th :last-child {
+      border-right: 1px #dddddd solid; }
+  table.table-hovered tbody tr:hover, table.table-hovered thead tr:hover {
+    background-color: rgba(28, 183, 236, 0.1); }
+    table.table-hovered tbody tr:hover td, table.table-hovered thead tr:hover td {
+      border-top: 1px #1c98cc solid;
+      border-bottom: 1px #1c98cc solid; }
+      table.table-hovered tbody tr:hover td :first-child, table.table-hovered thead tr:hover td :first-child {
+        border-left: 1px #1c98cc solid; }
+      table.table-hovered tbody tr:hover td :last-child, table.table-hovered thead tr:hover td :last-child {
+        border-right: 1px #1c98cc solid; }
