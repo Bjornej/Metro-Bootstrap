@@ -1,5 +1,5 @@
 table{
-	border-collapse:collapse;
+	border-collapse:separate;
 	width:100%;
 	border-spacing:0;
 	border-color:$tableBorderColor;
@@ -47,6 +47,22 @@ table{
 					border-right: 1px transparent solid;
 				}
 			}
+
+			&.success{
+				background-color:$successColor;
+			}
+
+			&.warning{
+				background-color:$warningColor;
+			}
+
+			&.error{
+				background-color:$errorColor;
+			}
+
+			&.info{
+				background-color:$infoColor;
+			}
 		}
 	}
 
@@ -59,37 +75,57 @@ table{
 	}
 
 	&.table-bordered {
-		tbody, thead {
+		border-collapse:separate;
+		tbody {
 			tr { 
 				td,th{
-					border-left: 1px $tableBorderColor solid;
 					border-right: 1px $tableBorderColor solid;
-					border-top: 1px $tableBorderColor solid;
+					border-bottom: 1px $tableBorderColor solid;
 
-					:last-child{
+					&:last-child{
 						border-right: 1px $tableBorderColor solid;
-
 					}
+
+					&:first-child{
+						border-left: 1px $tableBorderColor solid;
+					}				
 				}
 			}
+		}
+		thead > tr > td,th {
+			border-top: 1px $tableBorderColor solid;
+
+			&:last-child{
+				border-right: 1px $tableBorderColor solid;
+			}
+
+			&:first-child{
+				border-left: 1px $tableBorderColor solid;
+			}	
 		}
 	}
 
 
 	&.table-hovered {
-		tbody, thead {
+		tbody {
 			tr:hover { 
 				td {
 					border-top: 1px $hoveredBorderColor solid;
 					border-bottom: 1px $hoveredBorderColor solid;
-					:first-child{
+					&:first-child{
 						border-left: 1px $hoveredBorderColor solid;
 					}
-					:last-child{
+					&:last-child{
 						border-right: 1px $hoveredBorderColor solid;
 					}
 				}
 				background-color: $hoveredBackgroundColor;
+			}
+		}
+		thead {
+			tr > td:hover{
+				background-color: $hoveredBackgroundColor;
+				border:1px $hoveredBorderColor solid;
 			}
 		}
 	}
