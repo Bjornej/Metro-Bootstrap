@@ -1383,3 +1383,56 @@ table {
   table.table-hovered thead tr > td:hover {
     background-color: rgba(28, 183, 236, 0.1);
     border: 1px #1c98cc solid; }
+
+button, input[type="button"], .btn {
+  min-width: 90px;
+  min-height: 28px;
+  padding: 4px 10px;
+  background-color: #cccccc;
+  border: none; }
+  button[disabled="disabled"], button[disabled], button.disabled, input[type="button"][disabled="disabled"], input[type="button"][disabled], input[type="button"].disabled, .btn[disabled="disabled"], .btn[disabled], .btn.disabled {
+    background-color: #eaeaea;
+    color: #bebebe;
+    cursor: not-allowed; }
+  button.btn-primary, input[type="button"].btn-primary, .btn.btn-primary {
+    background-color: #008287;
+    color: White; }
+  button.btn-info, input[type="button"].btn-info, .btn.btn-info {
+    background-color: #2d89ef; }
+  button.btn-success, input[type="button"].btn-success, .btn.btn-success {
+    background-color: #00a300; }
+  button.btn-warning, input[type="button"].btn-warning, .btn.btn-warning {
+    background-color: #e3a21a; }
+  button.btn-danger, input[type="button"].btn-danger, .btn.btn-danger {
+    background-color: #b91d47; }
+  button.btn-large, input[type="button"].btn-large, .btn.btn-large {
+    min-height: 48px;
+    min-width: 48px;
+    height: 48px;
+    font-size: 21px; }
+  button.btn-small, input[type="button"].btn-small, .btn.btn-small {
+    min-height: 28px;
+    min-width: 28px;
+    height: 30px;
+    font-size: 12px; }
+  button.btn-mini, input[type="button"].btn-mini, .btn.btn-mini {
+    min-height: 24px;
+    min-width: 24px;
+    height: 26px;
+    font-size: 12px; }
+  button.btn-block, input[type="button"].btn-block, .btn.btn-block {
+    width: 100%;
+    display: block; }
+  button.command-button, input[type="button"].command-button, .btn.command-button {
+    width: 330px;
+    text-align: left;
+    padding: 10px 20px;
+    height: auto;
+    font-weight: 300; }
+    button.command-button.btn-primary, input[type="button"].command-button.btn-primary, .btn.command-button.btn-primary {
+      background-color: #008287;
+      color: White; }
+    button.command-button[disabled="disabled"], button.command-button[disabled], button.command-button.disabled, input[type="button"].command-button[disabled="disabled"], input[type="button"].command-button[disabled], input[type="button"].command-button.disabled, .btn.command-button[disabled="disabled"], .btn.command-button[disabled], .btn.command-button.disabled {
+      background-color: #eaeaea;
+      color: #bebebe;
+      cursor: not-allowed; }

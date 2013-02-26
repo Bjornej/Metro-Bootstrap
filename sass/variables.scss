@@ -43,3 +43,16 @@ $tableBorderColor:#ddd;
 $tableStripeColor: #f9f9f9;
 $hoveredBorderColor:#1c98cc ;
 $hoveredBackgroundColor:rgba(28, 183, 236, 0.1);
+
+//buttons
+//====================
+$buttonMinWidth:90px;
+$buttonMinHeight:2*$baseFontSize;
+$baseButtonColor:#ccc;
+$disabledButtonColor:#eaeaea;
+$disabledButtonText:#bebebe;
+$primaryButtonColor:#008287;
+$infoButtonColor:$infoColor;
+$successButtonColor:$successColor;
+$warningButtonColor:$warningColor;
+$dangerButtonColor:$errorColor;

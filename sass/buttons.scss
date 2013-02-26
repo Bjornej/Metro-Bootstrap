@@ -1,0 +1,79 @@
+button,input[type="button"],.btn{
+	min-width:$buttonMinWidth;
+	min-height:$buttonMinHeight;
+	padding: 4px 10px;
+	background-color:$baseButtonColor;
+	border:none;
+
+	&[disabled="disabled"], &[disabled], &.disabled{
+		background-color: $disabledButtonColor;
+		color: $disabledButtonText;
+		cursor: not-allowed;
+	}
+
+	&.btn-primary{
+		background-color:$primaryButtonColor;
+		color:White;
+	}
+
+	&.btn-info{
+		background-color:$infoButtonColor;
+	}
+
+	&.btn-success{
+		background-color:$successButtonColor;
+	}
+
+	&.btn-warning{
+		background-color:$warningButtonColor;
+	}
+
+	&.btn-danger{
+		background-color:$dangerButtonColor;
+	}
+
+	&.btn-large{
+		min-height: 48px;
+		min-width: 48px;
+		height: 48px;
+		font-size: $baseFontSize * 1.5;
+	}
+
+	&.btn-small{
+		min-height: 28px;
+		min-width: 28px;
+		height: 30px;
+		font-size: 12px;
+	}
+
+	&.btn-mini{
+		min-height: 24px;
+		min-width: 24px;
+		height: 26px;
+		font-size: 12px;
+	}
+
+	&.btn-block{
+		width:100%;
+		display:block;
+	}
+
+	&.command-button{
+		width: 330px;
+		text-align: left;
+		padding: 10px 20px;
+		height: auto;
+		font-weight: 300;
+
+		&.btn-primary{
+			background-color:$primaryButtonColor;
+			color:White;
+		}
+
+		&[disabled="disabled"], &[disabled], &.disabled{
+			background-color: $disabledButtonColor;
+			color: $disabledButtonText;
+			cursor: not-allowed;
+		}
+	}
+}
