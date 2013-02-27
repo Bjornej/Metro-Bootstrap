@@ -1384,55 +1384,74 @@ table {
     background-color: rgba(28, 183, 236, 0.1);
     border: 1px #1c98cc solid; }
 
-button, input[type="button"], .btn {
+button, input[type="button"], a.btn {
   min-width: 90px;
   min-height: 28px;
   padding: 4px 10px;
   background-color: #cccccc;
   border: none; }
-  button[disabled="disabled"], button[disabled], button.disabled, input[type="button"][disabled="disabled"], input[type="button"][disabled], input[type="button"].disabled, .btn[disabled="disabled"], .btn[disabled], .btn.disabled {
+  button[disabled="disabled"], button[disabled], button.disabled, input[type="button"][disabled="disabled"], input[type="button"][disabled], input[type="button"].disabled, a.btn[disabled="disabled"], a.btn[disabled], a.btn.disabled {
     background-color: #eaeaea;
     color: #bebebe;
     cursor: not-allowed; }
-  button.btn-primary, input[type="button"].btn-primary, .btn.btn-primary {
+  button.btn-primary, input[type="button"].btn-primary, a.btn.btn-primary {
     background-color: #008287;
     color: White; }
-  button.btn-info, input[type="button"].btn-info, .btn.btn-info {
+  button.btn-info, input[type="button"].btn-info, a.btn.btn-info {
     background-color: #2d89ef; }
-  button.btn-success, input[type="button"].btn-success, .btn.btn-success {
+  button.btn-success, input[type="button"].btn-success, a.btn.btn-success {
     background-color: #00a300; }
-  button.btn-warning, input[type="button"].btn-warning, .btn.btn-warning {
+  button.btn-warning, input[type="button"].btn-warning, a.btn.btn-warning {
     background-color: #e3a21a; }
-  button.btn-danger, input[type="button"].btn-danger, .btn.btn-danger {
+  button.btn-danger, input[type="button"].btn-danger, a.btn.btn-danger {
     background-color: #b91d47; }
-  button.btn-large, input[type="button"].btn-large, .btn.btn-large {
+  button.btn-large, input[type="button"].btn-large, a.btn.btn-large {
     min-height: 48px;
     min-width: 48px;
     height: 48px;
     font-size: 21px; }
-  button.btn-small, input[type="button"].btn-small, .btn.btn-small {
+  button.btn-small, input[type="button"].btn-small, a.btn.btn-small {
     min-height: 28px;
     min-width: 28px;
     height: 30px;
     font-size: 12px; }
-  button.btn-mini, input[type="button"].btn-mini, .btn.btn-mini {
+  button.btn-mini, input[type="button"].btn-mini, a.btn.btn-mini {
     min-height: 24px;
     min-width: 24px;
     height: 26px;
     font-size: 12px; }
-  button.btn-block, input[type="button"].btn-block, .btn.btn-block {
+  button.btn-block, input[type="button"].btn-block, a.btn.btn-block {
     width: 100%;
     display: block; }
-  button.command-button, input[type="button"].command-button, .btn.command-button {
+  button.command-button, input[type="button"].command-button, a.btn.command-button {
     width: 330px;
     text-align: left;
     padding: 10px 20px;
     height: auto;
     font-weight: 300; }
-    button.command-button.btn-primary, input[type="button"].command-button.btn-primary, .btn.command-button.btn-primary {
+    button.command-button.btn-primary, input[type="button"].command-button.btn-primary, a.btn.command-button.btn-primary {
       background-color: #008287;
       color: White; }
-    button.command-button[disabled="disabled"], button.command-button[disabled], button.command-button.disabled, input[type="button"].command-button[disabled="disabled"], input[type="button"].command-button[disabled], input[type="button"].command-button.disabled, .btn.command-button[disabled="disabled"], .btn.command-button[disabled], .btn.command-button.disabled {
+    button.command-button[disabled="disabled"], button.command-button[disabled], button.command-button.disabled, input[type="button"].command-button[disabled="disabled"], input[type="button"].command-button[disabled], input[type="button"].command-button.disabled, a.btn.command-button[disabled="disabled"], a.btn.command-button[disabled], a.btn.command-button.disabled {
       background-color: #eaeaea;
       color: #bebebe;
       cursor: not-allowed; }
+  button.image-button, input[type="button"].image-button, a.btn.image-button {
+    position: relative;
+    padding-right: 35px; }
+    button.image-button > [class^="icon-"], button.image-button [class*=" icon-"], input[type="button"].image-button > [class^="icon-"], input[type="button"].image-button [class*=" icon-"], a.btn.image-button > [class^="icon-"], a.btn.image-button [class*=" icon-"] {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 6px; }
+
+.toolbar button, .toolbar a.btn, .toolbar input[type="button"] {
+  width: 29px;
+  min-width: 29px;
+  height: 29px;
+  min-height: 29px;
+  padding: 0;
+  font-size: 10.5px;
+  font-weight: lighter; }
+.toolbar .toolbar-group {
+  margin-right: 20px; }

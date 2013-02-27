@@ -1,4 +1,4 @@
-button,input[type="button"],.btn{
+button,input[type="button"],a.btn{
 	min-width:$buttonMinWidth;
 	min-height:$buttonMinHeight;
 	padding: 4px 10px;
@@ -75,5 +75,35 @@ button,input[type="button"],.btn{
 			color: $disabledButtonText;
 			cursor: not-allowed;
 		}
+	}
+
+	&.image-button{
+		position:relative;
+		padding-right:35px;
+
+		> [class^="icon-"],[class*=" icon-"] {
+			position:absolute;
+			right:0;
+			top:0;
+			padding:6px;
+		}
+	}
+
+}
+
+
+.toolbar {
+	button,a.btn,input[type="button"]{
+		width:29px;
+		min-width:29px;
+		height:29px;
+		min-height:29px;
+		padding:0;
+		font-size:$baseFontSize * 0.75;
+		font-weight:lighter;
+	}
+
+	.toolbar-group{
+		margin-right:20px;
 	}
 }
