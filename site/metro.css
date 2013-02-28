@@ -339,6 +339,108 @@ table {
 body {
   font-family: "Segoe UI Light", "Open Sans", Verdana, Arial, Helvetica, sans-serif; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px;
+  padding: 0;
+  font-weight: 200;
+  letter-spacing: 0.00em;
+  color: Black;
+  text-rendering: optimizelegibility; }
+
+h1 {
+  font-size: 42px;
+  line-height: 44px; }
+
+h2 {
+  font-size: 35px;
+  line-height: 40px; }
+
+h3 {
+  font-size: 23.8px;
+  line-height: 40px; }
+
+h4 {
+  font-size: 17.5px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 11.9px; }
+
+p {
+  margin: 0 0 10px; }
+
+.lead {
+  font-size: 21px;
+  line-height: 30px; }
+
+small {
+  font-size: 11.9px; }
+
+strong, b {
+  font-weight: bold; }
+
+i, em {
+  font-style: italic; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.muted {
+  color: #999999; }
+
+.text-warning {
+  color: #e3a21a; }
+
+.text-error {
+  color: #b91d47; }
+
+.text-info {
+  color: #2d89ef; }
+
+.text-success {
+  color: #00a300; }
+
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999; }
+
+address {
+  display: block;
+  margin-bottom: 20px; }
+
+blockquote {
+  margin: 0;
+  padding: 5px 20px;
+  border-left: 4px #cccccc solid;
+  display: block;
+  background-color: rgba(204, 204, 204, 0.1); }
+  blockquote.pull-right {
+    text-align: right;
+    border: 0;
+    border-right: 4px #cccccc solid; }
+    blockquote.pull-right small:before {
+      content: ''; }
+    blockquote.pull-right small:after {
+      content: '—';
+      color: rgba(0, 0, 0, 0.4);
+      margin-right: 5px; }
+  blockquote p {
+    margin-bottom: 0; }
+  blockquote small {
+    font-size: 10.5px; }
+    blockquote small:before {
+      content: '—';
+      color: rgba(0, 0, 0, 0.4);
+      margin-right: 5px; }
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("../Font-Awesome/font/fontawesome-webfont.eot?v=3.0.1");

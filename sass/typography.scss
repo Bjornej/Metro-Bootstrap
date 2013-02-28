@@ -1,0 +1,117 @@
+
+h1,h2,h3,h4,h5,h6{
+	margin:10px;
+	padding:0;
+	font-weight: 200;
+	letter-spacing: 0.00em;
+	color:Black;
+	text-rendering: optimizelegibility;
+}
+
+h1 {
+	font-size:$baseFontSize * 3;
+	line-height:$baseLineHeight * 2.2;
+}
+
+h2 {
+	font-size:$baseFontSize * 2.5;
+	line-height:$baseLineHeight * 2;
+}
+
+h3 {
+	font-size:$baseFontSize * 1.7;
+	line-height:$baseLineHeight * 2;
+}
+
+h4 {
+	font-size:$baseFontSize * 1.25;
+}
+
+h5 {
+	font-size:$baseFontSize;
+}
+
+h6 {
+	font-size: $baseFontSize * 0.85;
+}
+
+p{
+	margin: 0 0 10px;
+}
+
+.lead{
+	font-size:$baseFontSize*1.5;
+	line-height:$baseLineHeight * 1.5;
+}
+
+small {
+	font-size: $baseFontSize * 0.85;
+}
+
+strong,b {
+	font-weight:bold;
+}
+
+i,em {
+	font-style: italic;
+}
+
+.text-left 	{ text-align:left;}
+.text-center { text-align:center;}
+.text-right { text-align:right;}
+
+
+.muted { color:#999999;}
+.text-warning { color:$warningColor;}
+.text-error { color: $errorColor;}
+.text-info {color: $infoColor;}
+.text-success {color: $successColor}
+
+abbr[title]{
+	cursor: help;
+	border-bottom: 1px dotted #999999;
+}
+
+address{
+	display: block;
+	margin-bottom: $baseLineHeight;
+}
+
+blockquote {
+	margin: 0;
+	padding: 5px $baseLineHeight;
+	border-left: 4px #ccc solid;
+	display: block;
+	background-color: $blockquoteBackgroundColor;
+
+	&.pull-right{
+		text-align: right;
+		border: 0;
+		border-right: 4px #ccc solid;
+
+		small {
+			&:before{
+				content: '';
+			}
+
+			&:after{
+				content: '—';
+				color: rgba(0, 0, 0, 0.4);
+				margin-right: 5px;
+			}
+		}
+	}
+
+	p {
+		margin-bottom:0;
+	}
+
+	small{
+		font-size: $baseFontSize *0.75;
+		&:before{
+			content: '—';
+			color: rgba(0, 0, 0, 0.4);
+			margin-right: 5px;
+		}
+	}
+}
