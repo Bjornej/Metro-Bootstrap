@@ -348,7 +348,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility; }
 
 h1 {
-  font-size: 42px;
+  font-size: 42pt;
   line-height: 44px; }
 
 h2 {
@@ -440,6 +440,53 @@ blockquote {
       content: '—';
       color: rgba(0, 0, 0, 0.4);
       margin-right: 5px; }
+
+ul, ol {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0 0 10px 0px;
+  display: block; }
+
+ul {
+  list-style-type: square; }
+  ul ul {
+    list-style-type: circle; }
+    ul ul:nth-child(1) {
+      margin-left: 20px; }
+  ul.unstyled {
+    margin-left: 0;
+    list-style: none; }
+  ul.inline {
+    margin-left: 0;
+    list-style: none; }
+    ul.inline li {
+      display: inline-block;
+      padding-right: 5px;
+      padding-left: 5px; }
+
+ol {
+  list-style-type: decimal; }
+
+dl {
+  margin-bottom: 20px; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-left: 10px; }
+
+.dl-horizontal dt {
+  float: left;
+  width: 160px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.dl-horizontal dd {
+  margin-left: 180px; }
 
 @font-face {
   font-family: 'FontAwesome';
@@ -1372,32 +1419,25 @@ blockquote {
   width: 180px;
   z-index: -1;
   height: 100%; }
-  .sidebar .sidebar-inner, .sidebar .sidebar-inner.pull-down {
-    padding-top: 40px; }
-    .sidebar .sidebar-inner > hr, .sidebar .sidebar-inner.pull-down > hr {
+  .sidebar ul.nav.nav-list {
+    padding: 40px 0 0 0;
+    margin-top: 0; }
+    .sidebar ul.nav.nav-list > hr {
       width: 85%;
       color: #d9d9d9; }
-    .sidebar .sidebar-inner > ul, .sidebar .sidebar-inner.pull-down > ul {
-      padding: 0;
-      margin-top: 0; }
-      .sidebar .sidebar-inner > ul > li, .sidebar .sidebar-inner.pull-down > ul > li {
-        list-style: none;
-        font-size: 21px;
-        padding: 4px 12px; }
-        .sidebar .sidebar-inner > ul > li.active, .sidebar .sidebar-inner.pull-down > ul > li.active {
-          background-color: #d4d4d4; }
-        .sidebar .sidebar-inner > ul > li > ul, .sidebar .sidebar-inner.pull-down > ul > li > ul {
-          padding-left: 10px;
-          margin: 0; }
-          .sidebar .sidebar-inner > ul > li > ul > li, .sidebar .sidebar-inner.pull-down > ul > li > ul > li {
-            list-style: none;
-            font-size: 14px;
-            margin: 4px 0; }
-  .sidebar .pull-down {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0; }
+    .sidebar ul.nav.nav-list > li {
+      list-style: none;
+      font-size: 21px;
+      padding: 4px 12px; }
+      .sidebar ul.nav.nav-list > li.active {
+        background-color: #d4d4d4; }
+      .sidebar ul.nav.nav-list > li > ul {
+        padding-left: 10px;
+        margin: 0; }
+        .sidebar ul.nav.nav-list > li > ul > li {
+          list-style: none;
+          font-size: 14px;
+          margin: 4px 0; }
 
 .main {
   top: 0;
