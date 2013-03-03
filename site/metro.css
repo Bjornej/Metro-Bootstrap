@@ -488,6 +488,65 @@ dd {
 .dl-horizontal dd {
   margin-left: 180px; }
 
+input, textarea, select {
+  border: 1px solid #bababa;
+  background-color: #fff;
+  padding: 4px 6px; }
+
+input, select {
+  width: 100%;
+  outline: none;
+  width: 206px;
+  height: 28px;
+  position: relative; }
+  input:focus, select:focus {
+    border-color: #000;
+    outline: none; }
+
+html input[disabled] {
+  background-color: #eaeaea;
+  cursor: not-allowed; }
+
+input[type="checkbox"], input[type="radio"] {
+  height: 24px;
+  width: 24px; }
+
+label {
+  display: block; }
+  label.checkbox, label.radio {
+    vertical-align: top; }
+    label.checkbox.inline, label.radio.inline {
+      display: inline; }
+
+select {
+  vertical-align: middle;
+  height: 32px;
+  line-height: 32px;
+  margin: 4px 6px 6px 5px; }
+  select[multiple] {
+    height: auto; }
+
+.input-block-level {
+  width: 100%; }
+
+.input-mini {
+  width: 60px; }
+
+.input-small {
+  width: 90px; }
+
+.input-medium {
+  width: 150px; }
+
+.input-large {
+  width: 210px; }
+
+.input-xlarge {
+  width: 270px; }
+
+.input-xxlarge {
+  width: 530px; }
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("../Font-Awesome/font/fontawesome-webfont.eot?v=3.0.1");

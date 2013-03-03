@@ -1,0 +1,74 @@
+
+input,textarea, select{
+		border: 1px solid $inputBorderColor ;
+		background-color: #fff;	
+				padding: 4px 6px;
+}
+
+input,select {
+	width: 100%;
+	outline: none;
+	width:206px;
+	height: 28px;
+	position: relative;
+	&:focus{
+		border-color: #000;
+		outline: none;
+	}
+}
+
+html input[disabled]{
+	background-color:$disabledInputBackgroundColor;
+	cursor:not-allowed;
+}
+
+input[type="checkbox"],input[type="radio"]{
+	height:24px;
+	width:24px;
+}
+
+label {
+	display:block;
+
+	&.checkbox,&.radio{
+		vertical-align:top;
+
+		&.inline{
+			display:inline
+		}
+	}
+}
+
+select{
+	vertical-align:middle;
+	height:32px;
+	line-height:32px;
+	margin:4px 6px 6px 5px;
+	&[multiple]{
+		height:auto;
+	}
+}
+
+.input-block-level{
+	width:100%;
+}
+
+.input-mini{
+	width:60px;
+}
+
+.input-small{
+	width:90px;
+}
+.input-medium{
+	width:150px;
+}
+.input-large{
+	width:210px;
+}
+.input-xlarge{
+	width:270px;
+}
+.input-xxlarge{
+	width:530px;
+}
