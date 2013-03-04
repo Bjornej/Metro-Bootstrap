@@ -1,0 +1,62 @@
+.container {
+	width:940px;
+	margin-right: auto;
+  	margin-left: auto;
+  	*zoom: 1;
+
+	&:before,
+	&:after {
+  		display: table;
+  		line-height: 0;
+  		content: "";
+	}
+
+	&:after{
+  		clear: both;
+	}
+}
+
+
+.row {
+  margin-left: -20px;
+  *zoom: 1;
+	&:before,
+	&:after {
+	  display: table;
+	  line-height: 0;
+	  content: "";
+	}
+
+	&:after {
+	  clear: both;
+	}
+}
+
+
+[class*="span"] {
+	float: left;
+	min-height: 1px;
+	margin-left: 20px;
+
+	&.hide, {
+	  display: none;
+	}
+
+	&.pull-right {
+		float: right;
+	}
+}
+
+@for $i from 1 to $gridColumnNumber{
+	.span#{$i}{
+		width: $i * 60px + (($i - 1)*20px);
+	}
+}
+
+@for $i from 1 to $gridColumnNumber{
+	.offset#{$i}{
+		margin-left: $i * 60px + (($i + 1)*20px);
+	}
+}
+
+
