@@ -5,7 +5,10 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     sass: {                                 // Task
-        dist: {                             // Target
+        dist: {  
+            options : {
+                precision : 15
+            },                         // Target
             files: {                        // Dictionary of files
                 'site/metro.css': 'sass/MetroBootstrap.scss'   // 'destination': 'source'
             }

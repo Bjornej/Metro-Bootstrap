@@ -15,3 +15,46 @@
     clear: both;
   }
 }
+
+
+@mixin grid($cols,$rowWidth, $columnWidth, $gutterWidth){
+  @for $i from 1 to $cols + 1 {
+    .span#{$i}{
+      width: ($columnWidth * $i) + ($gutterWidth * ($i - 1));
+    }   
+  }
+  @for $i from 1 to $cols + 1 {
+    .span#{$i}{
+      margin-left: ($columnWidth * $i) + ($gutterWidth * ($i + 1));
+    }   
+  }
+}
+
+@mixin fluidGrid($cols,$rowWidth, $columnWidth, $gutterWidth){
+  @for $i from 1 to $cols + 1 {
+    .span#{$i}{
+      width: ($i * ($columnWidth /$rowWidth) + (($i - 1)*($gutterWidth /$rowWidth))) * 100%;
+
+      //FIXME test why doesn't work like bootstrap
+      *width: (( $i * ($columnWidth /$rowWidth) + (($i - 1)*($gutterWidth /$rowWidth)))* 100%) - ((.5 / $rowWidth) * 100%);
+    }
+  }
+
+  @for $i from 1 to $cols + 1 {
+    .offset#{$i}{
+      margin-left: ($i * ($columnWidth /$rowWidth) + (($i - 1)*($gutterWidth /$rowWidth)) + (2*($gutterWidth /$rowWidth)) ) * 100%;
+
+      //FIXME test why doesn't work like bootstrap
+      *margin-left: (( $i * ($columnWidth /$rowWidth) + (($i - 1)*($gutterWidth /$rowWidth)))* 100%) - ((.5 / $rowWidth) * 100%) + (2*($gutterWidth /$rowWidth)*100%)- ((.5 / $rowWidth) * 100%);
+    }
+  }
+
+  @for $i from 1 to $cols + 1 {
+    .offset#{$i}:first-child{
+      margin-left: ($i * ($columnWidth /$rowWidth) + (($i - 1)*($gutterWidth /$rowWidth)) + (2*($gutterWidth /$rowWidth)) ) * 100%;
+
+      //FIXME test why doesn't work like bootstrap
+      *margin-left: (( $i * ($columnWidth /$rowWidth) + (($i - 1)*($gutterWidth /$rowWidth)))* 100%) - ((.5 / $rowWidth) * 100%) + (2*($gutterWidth /$rowWidth)*100%)- ((.5 / $rowWidth) * 100%);
+    }
+  }
+}

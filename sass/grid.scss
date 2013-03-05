@@ -36,7 +36,7 @@
 [class*="span"] {
 	float: left;
 	min-height: 1px;
-	margin-left: 20px;
+	margin-left: $gutterWidth;
 
 	&.hide, {
 	  display: none;
@@ -47,15 +47,15 @@
 	}
 }
 
-@for $i from 1 to $gridColumnNumber{
+@for $i from 1 to $gridColumnNumber + 1{
 	.span#{$i}{
-		width: $i * 60px + (($i - 1)*20px);
+		width: $i * $columWidth + (($i - 1)*$gutterWidth);
 	}
 }
 
-@for $i from 1 to $gridColumnNumber{
+@for $i from 1 to $gridColumnNumber + 1{
 	.offset#{$i}{
-		margin-left: $i * 60px + (($i + 1)*20px);
+		margin-left: $i * $columWidth + (($i + 1)*$gutterWidth);
 	}
 }
 

@@ -9,7 +9,7 @@ The style is built with Sass and the build system is based on Grunt
 
 Things still missing:
 
--  <strike>grid system</strike>
+-  ~~grid system~~
 - fluid grid system
 - fluid utility classes
 - complete forms handling
