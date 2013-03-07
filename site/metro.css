@@ -442,230 +442,6 @@ body {
 .offset12 {
   margin-left: 980px; }
 
-/* Large desktop */
-@media (min-width: 1200px) {
-  .row {
-    margin-left: -30px;
-    *zoom: 1; }
-    .row:before, .row:after {
-      display: table;
-      line-height: 0;
-      content: ""; }
-    .row:after {
-      clear: both; }
-
-  [class*="span"] {
-    float: left;
-    min-height: 1px;
-    margin-left: 30px; }
-
-  .container {
-    width: 1170px; }
-
-  .span1 {
-    width: 70px; }
-
-  .span2 {
-    width: 170px; }
-
-  .span3 {
-    width: 270px; }
-
-  .span4 {
-    width: 370px; }
-
-  .span5 {
-    width: 470px; }
-
-  .span6 {
-    width: 570px; }
-
-  .span7 {
-    width: 670px; }
-
-  .span8 {
-    width: 770px; }
-
-  .span9 {
-    width: 870px; }
-
-  .span10 {
-    width: 970px; }
-
-  .span11 {
-    width: 1070px; }
-
-  .span12 {
-    width: 1170px; }
-
-  .span1 {
-    margin-left: 130px; }
-
-  .span2 {
-    margin-left: 230px; }
-
-  .span3 {
-    margin-left: 330px; }
-
-  .span4 {
-    margin-left: 430px; }
-
-  .span5 {
-    margin-left: 530px; }
-
-  .span6 {
-    margin-left: 630px; }
-
-  .span7 {
-    margin-left: 730px; }
-
-  .span8 {
-    margin-left: 830px; }
-
-  .span9 {
-    margin-left: 930px; }
-
-  .span10 {
-    margin-left: 1030px; }
-
-  .span11 {
-    margin-left: 1130px; }
-
-  .span12 {
-    margin-left: 1230px; }
-
-  .row-fluid {
-    width: 100%;
-    *zoom: 1; }
-    .row-fluid.before, .row-fluid:after {
-      display: table;
-      line-height: 0;
-      content: ""; }
-    .row-fluid:after {
-      clear: both; }
-    .row-fluid[class*="span"] {
-      display: block;
-      float: left;
-      width: 100%;
-      min-height: 30px;
-      margin-left: 2.564102564102564%;
-      *margin-left: 2.5109110747408616%;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box; }
-      .row-fluid[class*="span"]:first-child {
-        margin-left: 0; }
-    .row-fluid .span1 {
-      width: 5.98290598290598%;
-      *width: 5.94017094017094%; }
-    .row-fluid .span2 {
-      width: 14.5299145299145%;
-      *width: 14.4871794871795%; }
-    .row-fluid .span3 {
-      width: 23.0769230769231%;
-      *width: 23.034188034188%; }
-    .row-fluid .span4 {
-      width: 31.6239316239316%;
-      *width: 31.5811965811966%; }
-    .row-fluid .span5 {
-      width: 40.1709401709402%;
-      *width: 40.1282051282051%; }
-    .row-fluid .span6 {
-      width: 48.7179487179487%;
-      *width: 48.6752136752137%; }
-    .row-fluid .span7 {
-      width: 57.2649572649573%;
-      *width: 57.2222222222222%; }
-    .row-fluid .span8 {
-      width: 65.8119658119658%;
-      *width: 65.7692307692308%; }
-    .row-fluid .span9 {
-      width: 74.3589743589744%;
-      *width: 74.3162393162393%; }
-    .row-fluid .span10 {
-      width: 82.9059829059829%;
-      *width: 82.8632478632478%; }
-    .row-fluid .span11 {
-      width: 91.4529914529915%;
-      *width: 91.4102564102564%; }
-    .row-fluid .span12 {
-      width: 100%;
-      *width: 99.957264957265%; }
-    .row-fluid .offset1 {
-      margin-left: 11.1111111111111%;
-      *margin-left: 11.025641025641%; }
-    .row-fluid .offset2 {
-      margin-left: 19.6581196581197%;
-      *margin-left: 19.5726495726496%; }
-    .row-fluid .offset3 {
-      margin-left: 28.2051282051282%;
-      *margin-left: 28.1196581196581%; }
-    .row-fluid .offset4 {
-      margin-left: 36.7521367521367%;
-      *margin-left: 36.6666666666667%; }
-    .row-fluid .offset5 {
-      margin-left: 45.2991452991453%;
-      *margin-left: 45.2136752136752%; }
-    .row-fluid .offset6 {
-      margin-left: 53.8461538461538%;
-      *margin-left: 53.7606837606837%; }
-    .row-fluid .offset7 {
-      margin-left: 62.3931623931624%;
-      *margin-left: 62.3076923076923%; }
-    .row-fluid .offset8 {
-      margin-left: 70.9401709401709%;
-      *margin-left: 70.8547008547008%; }
-    .row-fluid .offset9 {
-      margin-left: 79.4871794871795%;
-      *margin-left: 79.4017094017094%; }
-    .row-fluid .offset10 {
-      margin-left: 88.034188034188%;
-      *margin-left: 87.9487179487179%; }
-    .row-fluid .offset11 {
-      margin-left: 96.5811965811966%;
-      *margin-left: 96.4957264957265%; }
-    .row-fluid .offset12 {
-      margin-left: 105.128205128205%;
-      *margin-left: 105.042735042735%; }
-    .row-fluid .offset1:first-child {
-      margin-left: 11.1111111111111%;
-      *margin-left: 11.025641025641%; }
-    .row-fluid .offset2:first-child {
-      margin-left: 19.6581196581197%;
-      *margin-left: 19.5726495726496%; }
-    .row-fluid .offset3:first-child {
-      margin-left: 28.2051282051282%;
-      *margin-left: 28.1196581196581%; }
-    .row-fluid .offset4:first-child {
-      margin-left: 36.7521367521367%;
-      *margin-left: 36.6666666666667%; }
-    .row-fluid .offset5:first-child {
-      margin-left: 45.2991452991453%;
-      *margin-left: 45.2136752136752%; }
-    .row-fluid .offset6:first-child {
-      margin-left: 53.8461538461538%;
-      *margin-left: 53.7606837606837%; }
-    .row-fluid .offset7:first-child {
-      margin-left: 62.3931623931624%;
-      *margin-left: 62.3076923076923%; }
-    .row-fluid .offset8:first-child {
-      margin-left: 70.9401709401709%;
-      *margin-left: 70.8547008547008%; }
-    .row-fluid .offset9:first-child {
-      margin-left: 79.4871794871795%;
-      *margin-left: 79.4017094017094%; }
-    .row-fluid .offset10:first-child {
-      margin-left: 88.034188034188%;
-      *margin-left: 87.9487179487179%; }
-    .row-fluid .offset11:first-child {
-      margin-left: 96.5811965811966%;
-      *margin-left: 96.4957264957265%; }
-    .row-fluid .offset12:first-child {
-      margin-left: 105.128205128205%;
-      *margin-left: 105.042735042735%; } }
-/* Portrait tablet to landscape and desktop */
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
 h1, h2, h3, h4, h5, h6 {
   margin: 10px;
   padding: 0;
@@ -818,7 +594,8 @@ dd {
 input, textarea, select {
   border: 1px solid #bababa;
   background-color: #fff;
-  padding: 4px 6px; }
+  padding: 4px 6px;
+  margin-bottom: 10px; }
 
 input, select {
   width: 100%;
@@ -873,6 +650,41 @@ select {
 
 .input-xxlarge {
   width: 530px; }
+
+form {
+  margin: 0 0 20px; }
+
+fieldset {
+  margin-top: 20px;
+  border: 2px #eaeaea solid;
+  padding: 10px; }
+  fieldset legend {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    font-smooth: always;
+    color: #cfcfcf; }
+  fieldset label {
+    display: block;
+    margin-bottom: 5px; }
+
+.form-inline input, .form-inline label, .form-inline button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0; }
+
+.form-horizontal .control-label {
+  float: left;
+  width: 160px;
+  padding-top: 5px;
+  text-align: right; }
+.form-horizontal .controls {
+  margin-left: 180px; }
+
+.help-block {
+  display: block;
+  margin-bottom: 10px; }
 
 @font-face {
   font-family: 'FontAwesome';

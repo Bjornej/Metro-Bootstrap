@@ -12,7 +12,7 @@ Things still missing:
 -  ~~grid system~~
 - fluid grid system
 - fluid utility classes
-- complete forms handling
+- ~~complete forms handling~~
 - dropdown ( with javascript)
 - align button groups to twitter bootstrap 
 - split button dropdowns

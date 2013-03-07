@@ -17,7 +17,7 @@
     ================================================== -->
     <div class="navbar">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="">
           <div class="brand">
             730 Online
           </div>
@@ -52,50 +52,54 @@
 <div class="main">
   <div class="main-inner">
 
-    <input type="text">
-    <input type="text" placeholder="sample text">
-    <input type="text" disabled="disabled" value="dasdasda">
-    <input type="text" readonly="readonly" value="dadsa">
-  <textarea>
-  </textarea>
+<form >
+            <fieldset>
+              <legend>Legend</legend>
+              <label>Label name</label>
+              <input type="text" placeholder="Type something…">
+              <span class="help-block">Example block-level help text here.</span>
+              <label class="checkbox">
+                <input type="checkbox"> Check me out
+              </label>
+              <button type="submit" class="btn">Submit</button>
+            </fieldset>
+          </form>
 
-  <input type="checkbox">
-<input type="checkbox" checked="checked">
-<input type="checkbox" disabled="disabled">
-<input type="checkbox" checked="checked" disabled="disabled">
 
-<label class="checkbox">  <input type="checkbox"> test con label</label>
-<label class="checkbox">  <input type="checkbox"> test con label</label>
 
-<label class="radio">  <input type="radio"> test con label</label>
-<label class="radio">  <input type="radio"> test con label</label>
+<form class="form-inline">
+  <input type="text" class="input-small" placeholder="Email">
+  <input type="password" class="input-small" placeholder="Password">
+  <label class="checkbox">
+    <input type="checkbox"> Remember me
+  </label>
+  <button type="submit" class="btn">Sign in</button>
+</form>
 
-<label class="checkbox inline">  <input type="checkbox"> test con label</label>
-<label class="checkbox inline">  <input type="checkbox"> test con label</label>
-<br />
-<label class="radio inline">  <input type="radio"> test con label</label>
-<label class="radio inline">  <input type="radio"> test con label</label>
 
-<br />
-<select >
-  <option></option>
-  <option>2</option>
-  <option>3</option>
-</select>
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">Email</label>
+    <div class="controls">
+      <input type="text" id="inputEmail" placeholder="Email">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputPassword">Password</label>
+    <div class="controls">
+      <input type="password" id="inputPassword" placeholder="Password">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <label class="checkbox">
+        <input type="checkbox"> Remember me
+      </label>
+      <button type="submit" class="btn">Sign in</button>
+    </div>
+  </div>
+</form>
 
-<select multiple="multiple">
-  <option></option>
-  <option>2</option>
-  <option>3</option>
-</select>
-
-<br />
-<input class="input-mini" />
-<input class="input-small" />
-<input class="input-medium" />
-<input class="input-large" />
-<input class="input-xlarge" />
-<input class="input-xxlarge" />
 
   </div>
 </div>

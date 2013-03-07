@@ -24,7 +24,7 @@
     }   
   }
   @for $i from 1 to $cols + 1 {
-    .span#{$i}{
+    .offset#{$i}{
       margin-left: ($columnWidth * $i) + ($gutterWidth * ($i + 1));
     }   
   }

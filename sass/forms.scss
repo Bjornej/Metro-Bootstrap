@@ -2,7 +2,8 @@
 input,textarea, select{
 		border: 1px solid $inputBorderColor ;
 		background-color: #fff;	
-				padding: 4px 6px;
+		padding: 4px 6px;
+		margin-bottom:10px;
 }
 
 input,select {
@@ -71,4 +72,54 @@ select{
 }
 .input-xxlarge{
 	width:530px;
+}
+
+form{
+	margin: 0 0 20px;
+}
+
+fieldset{
+	margin-top: 20px;
+	border: 2px #eaeaea solid;
+	padding: 10px;
+
+	legend {
+		padding-left: 10px;
+		padding-right: 10px;
+		font-weight: 300;
+		letter-spacing: 0.02em;
+		font-smooth: always;
+		color: #cfcfcf;
+	}
+
+	label {
+		display:block;
+		margin-bottom:5px;
+	}
+}
+
+
+.form-inline{
+	input, label, button{
+		display:inline-block;
+		vertical-align:middle;
+		margin-bottom:0;
+	}
+}
+
+.form-horizontal {
+	.control-label {
+		float: left;
+		width: 160px;
+		padding-top: 5px;
+		text-align: right;
+	}
+	.controls{
+		margin-left: 180px;
+	}
+}
+
+.help-block{
+	display: block;
+	margin-bottom: 10px;
 }
