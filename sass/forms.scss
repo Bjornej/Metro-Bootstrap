@@ -119,6 +119,138 @@ fieldset{
 	}
 }
 
+
+.input-prepend {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+
+    .add-on{
+        display: inline-block;
+        width: auto;
+        height: 28px;
+        min-width: 24px;
+        padding: 4px 5px;
+        font-size:$baseFontSize;
+        line-height:28px;
+        text-align: center;
+        text-shadow: 0 1px 0 #ffffff;
+        background-color: #eeeeee;
+        border: 1px solid #ccc;
+
+
+    }
+
+    button.add-on,.btn.add-on{
+        height:38px;
+    }
+
+    input {
+        border-left:none;
+        position: relative;
+        margin-bottom: 0;
+        vertical-align: top;
+    }
+
+    
+}
+
+.input-append {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+
+    .add-on{
+        display: inline-block;
+        width: auto;
+        height: 28px;
+        min-width: 24px;
+        padding: 4px 5px;
+        font-size:$baseFontSize;
+        line-height:28px;
+        text-align: center;
+        text-shadow: 0 1px 0 #ffffff;
+        background-color: #eeeeee;
+        border: 1px solid #ccc;  
+    }
+
+    button.add-on,.btn.add-on{
+        height:38px;
+    }
+
+    input {
+        border-right:none;
+        position: relative;
+        margin-bottom: 0;
+        vertical-align: top;
+    }
+}
+
+
+.control-group.warning {
+    .control-label {
+        color:$warningColor;
+    }
+
+    input,select, textarea {
+        border-color:$warningColor;
+        color:$warningColor;
+    }   
+
+    .help-inline,.help-block{
+        color:$warningColor;
+    }
+}
+
+.control-group.error {
+    .control-label {
+        color:$errorColor;
+    }
+
+    input,select, textarea {
+        border-color:$errorColor;
+        color:$errorColor;
+    }   
+
+    .help-inline,.help-block{
+        color:$errorColor;
+    }
+}
+
+.control-group.info {
+    .control-label {
+        color:$infoColor;
+    }
+
+    input,select, textarea {
+        border-color:$infoColor;
+        color:$infoColor;
+    }   
+
+    .help-inline,.help-block{
+        color:$infoColor;
+    }
+}
+
+.control-group.success {
+    .control-label {
+        color:$successColor;
+    }
+
+    input,select, textarea {
+        border-color:$successColor;
+        color:$successColor;
+    }   
+
+    .help-inline,.help-block{
+        color:$successColor;
+    }
+}
+
 .help-block{
 	display: block;
 	margin-bottom: 10px;

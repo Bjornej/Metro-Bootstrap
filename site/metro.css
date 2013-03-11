@@ -682,6 +682,90 @@ fieldset {
 .form-horizontal .controls {
   margin-left: 180px; }
 
+.input-prepend {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle; }
+  .input-prepend .add-on {
+    display: inline-block;
+    width: auto;
+    height: 28px;
+    min-width: 24px;
+    padding: 4px 5px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    text-shadow: 0 1px 0 white;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc; }
+  .input-prepend button.add-on, .input-prepend .btn.add-on {
+    height: 38px; }
+  .input-prepend input {
+    border-left: none;
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top; }
+
+.input-append {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle; }
+  .input-append .add-on {
+    display: inline-block;
+    width: auto;
+    height: 28px;
+    min-width: 24px;
+    padding: 4px 5px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    text-shadow: 0 1px 0 white;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc; }
+  .input-append button.add-on, .input-append .btn.add-on {
+    height: 38px; }
+  .input-append input {
+    border-right: none;
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top; }
+
+.control-group.warning .control-label {
+  color: #e3a21a; }
+.control-group.warning input, .control-group.warning select, .control-group.warning textarea {
+  border-color: #e3a21a;
+  color: #e3a21a; }
+.control-group.warning .help-inline, .control-group.warning .help-block {
+  color: #e3a21a; }
+
+.control-group.error .control-label {
+  color: #b91d47; }
+.control-group.error input, .control-group.error select, .control-group.error textarea {
+  border-color: #b91d47;
+  color: #b91d47; }
+.control-group.error .help-inline, .control-group.error .help-block {
+  color: #b91d47; }
+
+.control-group.info .control-label {
+  color: #2d89ef; }
+.control-group.info input, .control-group.info select, .control-group.info textarea {
+  border-color: #2d89ef;
+  color: #2d89ef; }
+.control-group.info .help-inline, .control-group.info .help-block {
+  color: #2d89ef; }
+
+.control-group.success .control-label {
+  color: #00a300; }
+.control-group.success input, .control-group.success select, .control-group.success textarea {
+  border-color: #00a300;
+  color: #00a300; }
+.control-group.success .help-inline, .control-group.success .help-block {
+  color: #00a300; }
+
 .help-block {
   display: block;
   margin-bottom: 10px; }
