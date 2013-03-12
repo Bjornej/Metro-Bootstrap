@@ -1813,7 +1813,9 @@ button, input[type="button"], a.btn {
   min-height: 28px;
   padding: 4px 10px;
   background-color: #cccccc;
-  border: none; }
+  border: none;
+  text-decoration: none;
+  color: black; }
   button[disabled="disabled"], button[disabled], button.disabled, input[type="button"][disabled="disabled"], input[type="button"][disabled], input[type="button"].disabled, a.btn[disabled="disabled"], a.btn[disabled], a.btn.disabled {
     background-color: #eaeaea;
     color: #bebebe;
@@ -1879,3 +1881,33 @@ button, input[type="button"], a.btn {
   font-weight: lighter; }
 .toolbar .toolbar-group {
   margin-right: 20px; }
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px;
+  margin: 2px 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #094ab2; }
+  .dropdown-menu > li > a {
+    display: block;
+    padding: 3px 5px;
+    clear: both;
+    white-space: nowrap; }
+    .dropdown-menu > li > a:hover {
+      color: #ffffff;
+      text-decoration: none;
+      background-color: #094ab2; }
+
+.btn-group.open .dropdown-menu {
+  display: block; }
+  .btn-group.open .dropdown-menu li {
+    list-style: none; }
+    .btn-group.open .dropdown-menu li a {
+      color: black;
+      text-decoration: none; }
