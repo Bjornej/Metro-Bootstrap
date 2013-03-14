@@ -93,6 +93,16 @@ button,input[type="button"],a.btn{
 
 }
 
+.caret{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    border-top: 4px solid #000000;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: "";
+}
 
 .toolbar {
 	button,a.btn,input[type="button"]{
@@ -110,6 +120,9 @@ button,input[type="button"],a.btn{
 	}
 }
 
+.btn-group,.dropdown{
+    position:relative;
+}
 
 .dropdown-menu{
     position: absolute;
@@ -122,7 +135,13 @@ button,input[type="button"],a.btn{
     margin: 2px 0 0;
     list-style: none;
     background-color: #ffffff;
-    border: 1px solid $baseColor;
+    border: 2px solid $baseColor;
+
+    li.divider {
+        height:1px;
+        background-color:$sidebarSeparatorColor;
+        margin:2px 0;
+    }
 
     > li > a {
     display: block;
@@ -133,12 +152,22 @@ button,input[type="button"],a.btn{
         &:hover{
             color: #ffffff;
             text-decoration: none;
-            background-color: $baseColor;
+            background-color: lighten($sidebarSeparatorColor,5%);
         }
     }
 }
 
-.btn-group.open{
+.pull-right{
+    .dropdown-menu{
+        position: absolute;
+        right: 0;
+        left:auto;
+        float: right;
+    }
+}
+
+
+.open{
     .dropdown-menu{
         display:block;
         li{

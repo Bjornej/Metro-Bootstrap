@@ -1631,25 +1631,9 @@ fieldset {
   text-decoration: none;
   background-color: #073c90; }
 
-.navbar .nav > li > .dropdown-menu:before {
-  content: '';
-  display: inline-block;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid #cccccc;
-  border-bottom-color: #094ab2;
-  position: absolute;
-  top: -7px;
-  left: 9px; }
-.navbar .nav > li > .dropdown-menu:after {
-  content: '';
-  display: inline-block;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 6px solid white;
-  position: absolute;
-  top: -6px;
-  left: 10px; }
+.navbar .nav > li > .dropdown-menu {
+  border-top: none;
+  margin: 0; }
 
 .navbar .nav li.dropdown > a:hover .caret,
 .navbar .nav li.dropdown > a:focus .caret {
@@ -1871,6 +1855,16 @@ button, input[type="button"], a.btn {
       top: 0;
       padding: 6px; }
 
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  border-top: 4px solid black;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: ""; }
+
 .toolbar button, .toolbar a.btn, .toolbar input[type="button"] {
   width: 29px;
   min-width: 29px;
@@ -1881,6 +1875,9 @@ button, input[type="button"], a.btn {
   font-weight: lighter; }
 .toolbar .toolbar-group {
   margin-right: 20px; }
+
+.btn-group, .dropdown {
+  position: relative; }
 
 .dropdown-menu {
   position: absolute;
@@ -1893,7 +1890,11 @@ button, input[type="button"], a.btn {
   margin: 2px 0 0;
   list-style: none;
   background-color: #ffffff;
-  border: 1px solid #094ab2; }
+  border: 2px solid #094ab2; }
+  .dropdown-menu li.divider {
+    height: 1px;
+    background-color: #d9d9d9;
+    margin: 2px 0; }
   .dropdown-menu > li > a {
     display: block;
     padding: 3px 5px;
@@ -1902,12 +1903,18 @@ button, input[type="button"], a.btn {
     .dropdown-menu > li > a:hover {
       color: #ffffff;
       text-decoration: none;
-      background-color: #094ab2; }
+      background-color: #e6e6e6; }
 
-.btn-group.open .dropdown-menu {
+.pull-right .dropdown-menu {
+  position: absolute;
+  right: 0;
+  left: auto;
+  float: right; }
+
+.open .dropdown-menu {
   display: block; }
-  .btn-group.open .dropdown-menu li {
+  .open .dropdown-menu li {
     list-style: none; }
-    .btn-group.open .dropdown-menu li a {
+    .open .dropdown-menu li a {
       color: black;
       text-decoration: none; }
