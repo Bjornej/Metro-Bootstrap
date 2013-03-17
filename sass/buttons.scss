@@ -93,15 +93,21 @@ button,input[type="button"],a.btn{
 
 }
 
+
+
 .caret{
     display: inline-block;
     width: 0;
     height: 0;
-    vertical-align: top;
+    vertical-align: middle;
     border-top: 4px solid #000000;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
     content: "";
+}
+
+.nav .caret {
+    margin-bottom: 10px;
 }
 
 .toolbar {
@@ -157,6 +163,20 @@ button,input[type="button"],a.btn{
     }
 }
 
+.dropup {
+    .caret {
+        border-bottom: 4px solid #000000;
+        border-top:none;
+    }
+
+    .dropdown-menu {
+        top: auto;
+        bottom: 100%;
+        margin-bottom: 1px;
+    }
+}
+
+
 .pull-right{
     .dropdown-menu{
         position: absolute;
@@ -179,5 +199,13 @@ button,input[type="button"],a.btn{
                 text-decoration:none;
             }
         }
+    }
+}
+
+.btn-group {
+    .btn + .dropdown-toggle {
+        min-width:0;
+        margin-left: -4px;
+        border-left: 1px solid $sidebarSeparatorColor;
     }
 }

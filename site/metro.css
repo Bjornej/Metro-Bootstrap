@@ -1859,11 +1859,14 @@ button, input[type="button"], a.btn {
   display: inline-block;
   width: 0;
   height: 0;
-  vertical-align: top;
+  vertical-align: middle;
   border-top: 4px solid black;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
   content: ""; }
+
+.nav .caret {
+  margin-bottom: 10px; }
 
 .toolbar button, .toolbar a.btn, .toolbar input[type="button"] {
   width: 29px;
@@ -1905,6 +1908,14 @@ button, input[type="button"], a.btn {
       text-decoration: none;
       background-color: #e6e6e6; }
 
+.dropup .caret {
+  border-bottom: 4px solid black;
+  border-top: none; }
+.dropup .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px; }
+
 .pull-right .dropdown-menu {
   position: absolute;
   right: 0;
@@ -1918,3 +1929,8 @@ button, input[type="button"], a.btn {
     .open .dropdown-menu li a {
       color: black;
       text-decoration: none; }
+
+.btn-group .btn + .dropdown-toggle {
+  min-width: 0;
+  margin-left: -4px;
+  border-left: 1px solid #d9d9d9; }

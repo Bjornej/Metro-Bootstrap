@@ -13,9 +13,9 @@ Things still missing:
 - fluid grid system
 - fluid utility classes
 - ~~complete forms handling~~
-- dropdown ( with javascript)
+- ~~dropdown ( with javascript)~~
 - align button groups to twitter bootstrap 
-- split button dropdowns
+- ~~split button dropdowns~~
 - style jquery ui tabs ( pills and stackable, dropdowns)
 - redesign nav list
 - breadcrumbs 
