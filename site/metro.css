@@ -1934,3 +1934,88 @@ button, input[type="button"], a.btn {
   min-width: 0;
   margin-left: -4px;
   border-left: 1px solid #d9d9d9; }
+
+.notice {
+  position: relative;
+  height: 90px;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 10px; }
+  .notice .close {
+    z-index: 2;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: white !important; }
+  .notice .icon {
+    position: absolute;
+    right: 10px;
+    bottom: 5px; }
+  .notice .image {
+    max-height: 48px;
+    width: 48px;
+    height: 48px;
+    margin: 20px 20px 20px 20px;
+    float: left; }
+  .notice .header {
+    position: relative;
+    font-size: 12pt;
+    letter-spacing: 0.01em;
+    line-height: 24pt;
+    font-smooth: always;
+    margin-top: 5px;
+    margin-left: 10px; }
+  .notice .text {
+    position: relative;
+    margin-right: 50px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 10pt;
+    font-smooth: always;
+    margin-top: -5px;
+    line-height: 16px; }
+
+.reply {
+  height: 90px;
+  color: White;
+  position: relative; }
+  .reply .sticker {
+    width: 0;
+    height: 0;
+    border-top: 10px solid white;
+    position: absolute;
+    display: block;
+    z-index: 1000; }
+    .reply .sticker.sticker-right {
+      border-right: 20px solid transparent !important;
+      right: -20px; }
+    .reply .sticker.sticker-left {
+      border-left: 20px solid transparent !important;
+      left: -20px; }
+  .reply .avatar {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle !important;
+    float: left;
+    margin: 10px; }
+  .reply .content {
+    padding: 4px; }
+    .reply .content .date {
+      float: right;
+      font-size: 55%;
+      color: #ffffff; }
+    .reply .content .author {
+      font-size: 12pt;
+      letter-spacing: 0.01em;
+      line-height: 24pt;
+      font-smooth: always; }
+    .reply .content .text {
+      font-size: 10pt;
+      font-smooth: always;
+      margin-top: -5px;
+      line-height: 16px; }

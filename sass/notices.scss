@@ -1,0 +1,114 @@
+.notice {
+    position:relative;
+    height: 90px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    .close {
+        z-index: 2;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff !important;
+    }
+
+    .icon {
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+    }
+
+    .image {
+        max-height: 48px;
+        width: 48px;
+        height: 48px;
+        margin: 20px 20px 20px 20px;
+        float: left;
+    }
+
+    .header {
+        position: relative;
+        font-size: 12pt;
+        letter-spacing: 0.01em;
+        line-height: 24pt;
+        font-smooth: always;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .text {
+        position: relative;
+        margin-right: 50px;
+        margin-left: 10px;
+        color: #fff;
+        font-size: 10pt;
+        font-smooth: always;
+        margin-top: -5px;
+        line-height: 16px;
+    }
+}
+
+
+.reply {
+    height:90px;
+    color :White; 
+    position:relative;
+
+
+    .sticker {
+        width: 0;
+        height: 0;
+        border-top: 10px solid #ffffff;
+        position: absolute;
+        display: block;
+        z-index: 1000;
+
+        &.sticker-right{
+            border-right: 20px solid transparent !important;
+            right: -20px;
+        }
+
+        &.sticker-left{
+            border-left: 20px solid transparent !important;
+            left: -20px;
+        }
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        display: table-cell;
+        vertical-align: middle !important;
+        float:left;
+        margin:10px;
+    }
+
+    .content {
+        padding:4px;
+
+        .date {
+            float: right;
+            font-size: 55%;
+            color: #ffffff;
+        }
+
+        .author {
+            font-size: 12pt;
+            letter-spacing: 0.01em;
+            line-height: 24pt;
+            font-smooth: always;
+        }
+
+        .text {
+            font-size: 10pt;
+            font-smooth: always;
+            margin-top: -5px;
+            line-height: 16px;
+        }
+    }
+}
