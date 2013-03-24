@@ -1,4 +1,4 @@
-button,input[type="button"],a.btn{
+button,input[type="button"],a.btn,.ui-button{
 	min-width:$buttonMinWidth;
 	min-height:$buttonMinHeight;
 	padding: 4px 10px;
@@ -6,6 +6,7 @@ button,input[type="button"],a.btn{
 	border:none;
     text-decoration: none;
     color:black;
+    cursor:pointer;
 
 	&[disabled="disabled"], &[disabled], &.disabled{
 		background-color: $disabledButtonColor;
@@ -91,6 +92,12 @@ button,input[type="button"],a.btn{
 		}
 	}
 
+}
+
+.ui-button.ui-widget {
+    display:inline-block;
+    min-height:20px;
+    text-align:center;
 }
 
 

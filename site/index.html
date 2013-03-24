@@ -17,7 +17,7 @@
     ================================================== -->
     <div class="navbar">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="">
           <div class="brand">
             730 Online
           </div>
@@ -70,6 +70,21 @@
 <button class="command-button btn-primary">bottone</button>
     <button class="command-button" disabled>bottone</button>
 
+      <br />
+      <br />
+      <a id="jqButton">prova</a>
+      <button id="jqButton2">ds</button>
+      <link href="../jqueryui/themes/base/jquery.ui.all.css">
+      <script type="text/javascript" src="../jquery.js"></script>
+      <script type="text/javascript" src="../jqueryui/ui/jquery.ui.core.js"></script>
+      <script type="text/javascript" src="../jqueryui/ui/jquery.ui.widget.js"></script>
+      <script type="text/javascript" src="../jqueryui/ui/jquery.ui.button.js"></script>
+      <script type="text/javascript">
+          $(function () {
+              $("#jqButton").button();
+              $("#jqButton2").button();
+          });
+      </script>
 
     <div class="toolbar">
       <button><i class="icon-plus"></i></button>
