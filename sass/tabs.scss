@@ -1,0 +1,149 @@
+.nav-tabs{
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    background-color: rgba(217, 217, 217, 0.16);
+
+
+    &:before, &:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+
+    &:after {
+        clear:both;
+    }
+
+    li {
+        margin-bottom: -1px;
+        float:left;
+
+        &:first-child {
+            margin-left:20px;
+        }
+
+        &.active a{
+                color:#2d89ef;
+            cursor: default;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-bottom-color: transparent;
+        }
+
+        &.pull-right{
+            float:right;
+            margin-right:10px;
+        }
+
+        a {
+            color:#1e1e1e;
+            padding:5px 10px;
+            line-height: 20px;
+            margin-right: 2px;
+            display: block;
+            text-decoration:none;
+        }
+    }
+
+
+}
+
+.tab-content {
+    overflow: auto;
+
+    .tab-pane{
+        display:none;
+
+        &.active {
+            display:block;
+        }
+    }
+}
+
+.tabbable {
+    &:after {
+        clear:both;
+    }
+
+    &:before,&:after{
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+}
+
+.tabs-below .nav-tabs {
+    border-top: 1px solid #ddd;
+}
+
+.tabs-below,.tabs-right,.tabs-left {
+    .nav-tabs {
+        border-bottom: 0;
+    }
+}
+
+.tabs-below .nav-tabs {
+    li {
+        margin-top:-1px;
+        &.active a {
+            border-color: transparent #ddd #ddd #ddd;
+        }
+    }
+}
+
+.tabs-left {
+    .nav-tabs {
+        float: left;
+        margin-right: 19px;
+        border-right: 1px solid #ddd;
+        width:initial;
+
+        li {
+            margin-left:20px;
+            float: none;
+            display:block;
+            margin-right:-1px;
+
+            a {
+                min-width: 74px;
+                margin-right: 0;
+                margin-bottom: 3px;
+                display:block;
+            }
+
+            &.active a {
+                border-color: #ddd transparent #ddd #ddd;
+            }
+        }
+    }
+}
+
+.tabs-right {
+    .nav-tabs {
+        float: right;
+        margin-left: 19px;
+        border-left: 1px solid #ddd;
+        width:initial;
+
+        li {
+            float:none;
+            margin-left:-1px;
+
+            &.active a {
+                border-color: #ddd #ddd #ddd transparent;
+            }
+
+            a {
+                min-width: 74px;
+                margin-right: 0;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
+
+
+.nav {
+    margin-left: 0;
+    list-style: none;
+}
