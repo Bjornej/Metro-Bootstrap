@@ -16,7 +16,7 @@ Things still missing:
 - ~~dropdown ( with javascript)~~
 - align button groups to twitter bootstrap 
 - ~~split button dropdowns~~
-- style jquery ui tabs ( pills and stackable, dropdowns)
+- ~~style jquery ui tabs ( pills and stackable, dropdowns)~~
 - redesign nav list
 - breadcrumbs 
 - pagination
