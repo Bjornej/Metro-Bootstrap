@@ -2026,37 +2026,45 @@ button, input[type="button"], a.btn, .ui-button {
       margin-top: -5px;
       line-height: 16px; }
 
-.nav-tabs {
+.nav-tabs, .ui-tabs-nav {
   border-bottom: 1px solid #dddddd;
   width: 100%;
   background-color: rgba(217, 217, 217, 0.16); }
-  .nav-tabs:before, .nav-tabs:after {
+  .nav-tabs:before, .nav-tabs:after, .ui-tabs-nav:before, .ui-tabs-nav:after {
     display: table;
     line-height: 0;
     content: ""; }
-  .nav-tabs:after {
+  .nav-tabs:after, .ui-tabs-nav:after {
     clear: both; }
-  .nav-tabs li {
+  .nav-tabs li, .ui-tabs-nav li {
     margin-bottom: -1px;
-    float: left; }
-    .nav-tabs li:first-child {
+    float: left;
+    list-style: none; }
+    .nav-tabs li:first-child, .ui-tabs-nav li:first-child {
       margin-left: 20px; }
-    .nav-tabs li.active a {
-      color: #2d89ef;
+    .nav-tabs li.active a, .ui-tabs-nav li.active a {
       cursor: default;
       background-color: #ffffff;
       border: 1px solid #dddddd;
       border-bottom-color: transparent; }
-    .nav-tabs li.pull-right {
+    .nav-tabs li.ui-tabs-selected a, .ui-tabs-nav li.ui-tabs-selected a {
+      cursor: default;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-bottom-color: transparent; }
+    .nav-tabs li.pull-right, .ui-tabs-nav li.pull-right {
       float: right;
       margin-right: 10px; }
-    .nav-tabs li a {
+    .nav-tabs li a, .ui-tabs-nav li a {
       color: #1e1e1e;
       padding: 5px 10px;
       line-height: 20px;
       margin-right: 2px;
       display: block;
       text-decoration: none; }
+
+.ui-tabs-hide {
+  display: none; }
 
 .tab-content {
   overflow: auto; }
@@ -2072,46 +2080,53 @@ button, input[type="button"], a.btn, .ui-button {
   line-height: 0;
   content: ""; }
 
-.tabs-below .nav-tabs {
+.tabs-below .nav-tabs, .tabs-below .ui-tabs-nav {
   border-top: 1px solid #dddddd; }
 
-.tabs-below .nav-tabs, .tabs-right .nav-tabs, .tabs-left .nav-tabs {
+.tabs-below .nav-tabs, .tabs-below .ui-tabs-nav, .tabs-right .nav-tabs, .tabs-right .ui-tabs-nav, .tabs-left .nav-tabs, .tabs-left .ui-tabs-nav {
   border-bottom: 0; }
 
-.tabs-below .nav-tabs li {
+.tabs-below .nav-tabs li, .tabs-below .ui-tabs-nav li {
   margin-top: -1px; }
-  .tabs-below .nav-tabs li.active a {
+  .tabs-below .nav-tabs li.active a, .tabs-below .ui-tabs-nav li.active a {
+    border-color: transparent #dddddd #dddddd #dddddd; }
+  .tabs-below .nav-tabs li.ui-tabs-selected a, .tabs-below .ui-tabs-nav li.ui-tabs-selected a {
     border-color: transparent #dddddd #dddddd #dddddd; }
 
-.tabs-left .nav-tabs {
+.tabs-left .nav-tabs, .tabs-left .ui-tabs-nav {
   float: left;
   margin-right: 19px;
   border-right: 1px solid #dddddd;
   width: initial; }
-  .tabs-left .nav-tabs li {
+  .tabs-left .nav-tabs li, .tabs-left .ui-tabs-nav li {
     margin-left: 20px;
     float: none;
     display: block;
     margin-right: -1px; }
-    .tabs-left .nav-tabs li a {
+    .tabs-left .nav-tabs li a, .tabs-left .ui-tabs-nav li a {
       min-width: 74px;
       margin-right: 0;
       margin-bottom: 3px;
       display: block; }
-    .tabs-left .nav-tabs li.active a {
+    .tabs-left .nav-tabs li.active a, .tabs-left .ui-tabs-nav li.active a {
+      border-color: #dddddd transparent #dddddd #dddddd; }
+    .tabs-left .nav-tabs li.ui-tabs-selected a, .tabs-left .ui-tabs-nav li.ui-tabs-selected a {
       border-color: #dddddd transparent #dddddd #dddddd; }
 
-.tabs-right .nav-tabs {
+.tabs-right .nav-tabs, .tabs-right .ui-tabs-nav {
   float: right;
   margin-left: 19px;
   border-left: 1px solid #dddddd;
   width: initial; }
-  .tabs-right .nav-tabs li {
+  .tabs-right .nav-tabs li, .tabs-right .ui-tabs-nav li {
     float: none;
+    margin-right: 20px;
     margin-left: -1px; }
-    .tabs-right .nav-tabs li.active a {
+    .tabs-right .nav-tabs li.active a, .tabs-right .ui-tabs-nav li.active a {
       border-color: #dddddd #dddddd #dddddd transparent; }
-    .tabs-right .nav-tabs li a {
+    .tabs-right .nav-tabs li.ui-tabs-selected a, .tabs-right .ui-tabs-nav li.ui-tabs-selected a {
+      border-color: #dddddd #dddddd #dddddd transparent; }
+    .tabs-right .nav-tabs li a, .tabs-right .ui-tabs-nav li a {
       min-width: 74px;
       margin-right: 0;
       margin-bottom: 3px; }
@@ -2119,3 +2134,6 @@ button, input[type="button"], a.btn, .ui-button {
 .nav {
   margin-left: 0;
   list-style: none; }
+
+.ui-tabs-panel {
+  overflow: auto; }

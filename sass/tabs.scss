@@ -1,4 +1,4 @@
-.nav-tabs{
+.nav-tabs,.ui-tabs-nav{
     border-bottom: 1px solid #ddd;
     width: 100%;
     background-color: rgba(217, 217, 217, 0.16);
@@ -17,13 +17,20 @@
     li {
         margin-bottom: -1px;
         float:left;
+        list-style:none;
 
         &:first-child {
             margin-left:20px;
         }
 
         &.active a{
-                color:#2d89ef;
+            cursor: default;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-bottom-color: transparent;
+        }
+
+        &.ui-tabs-selected a{
             cursor: default;
             background-color: #ffffff;
             border: 1px solid #ddd;
@@ -45,8 +52,12 @@
         }
     }
 
-
 }
+
+
+    .ui-tabs-hide {
+        display:none;
+    }
 
 .tab-content {
     overflow: auto;
@@ -72,27 +83,35 @@
     }
 }
 
-.tabs-below .nav-tabs {
-    border-top: 1px solid #ddd;
+.tabs-below {
+    .nav-tabs,.ui-tabs-nav {
+        border-top: 1px solid #ddd;
+    }
 }
 
 .tabs-below,.tabs-right,.tabs-left {
-    .nav-tabs {
+    .nav-tabs,.ui-tabs-nav {
         border-bottom: 0;
     }
 }
 
-.tabs-below .nav-tabs {
-    li {
-        margin-top:-1px;
-        &.active a {
-            border-color: transparent #ddd #ddd #ddd;
+.tabs-below {
+    .nav-tabs,.ui-tabs-nav {
+        li {
+            margin-top:-1px;
+            &.active a {
+                border-color: transparent #ddd #ddd #ddd;
+            }
+
+            &.ui-tabs-selected a {
+                border-color: transparent #ddd #ddd #ddd;
+            }
         }
     }
 }
 
 .tabs-left {
-    .nav-tabs {
+    .nav-tabs,.ui-tabs-nav {
         float: left;
         margin-right: 19px;
         border-right: 1px solid #ddd;
@@ -114,12 +133,16 @@
             &.active a {
                 border-color: #ddd transparent #ddd #ddd;
             }
+
+            &.ui-tabs-selected a {
+                border-color: #ddd transparent #ddd #ddd;
+            }
         }
     }
 }
 
 .tabs-right {
-    .nav-tabs {
+    .nav-tabs,.ui-tabs-nav {
         float: right;
         margin-left: 19px;
         border-left: 1px solid #ddd;
@@ -127,9 +150,14 @@
 
         li {
             float:none;
+            margin-right:20px;
             margin-left:-1px;
 
             &.active a {
+                border-color: #ddd #ddd #ddd transparent;
+            }
+
+            &.ui-tabs-selected a {
                 border-color: #ddd #ddd #ddd transparent;
             }
 
@@ -146,4 +174,8 @@
 .nav {
     margin-left: 0;
     list-style: none;
+}
+
+.ui-tabs-panel {
+    overflow:auto;
 }
