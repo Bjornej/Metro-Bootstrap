@@ -1,0 +1,60 @@
+.accordion {
+    margin-bottom:20px;
+
+    .accordion-group {
+        margin-bottom: 2px;
+        border: 1px solid #e5e5e5;
+
+        .accordion-heading {
+            border-bottom:0;
+
+            .accordion-toggle {
+                display:block;
+                padding: 8px 15px;
+                cursor:pointer; 
+                background-color:rgba(217, 217, 217, 0.16);
+                text-decoration:none;
+                color:#1e1e1e;         
+            }
+
+        }
+
+        .collapse {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            -webkit-transition: height 0.35s ease;
+            -moz-transition: height 0.35s ease;
+            -o-transition: height 0.35s ease;
+            transition: height 0.35s ease;
+
+            .accordion-inner {
+                padding: 9px 15px;
+                border-top: 1px solid #e5e5e5;
+            }
+        }
+    }
+}
+
+.ui-accordion {
+    .ui-accordion-header {
+        margin:1px 0;
+        font-size:16px;
+        line-height:20px;
+        display:block;
+        padding: 8px 15px;
+        cursor:pointer; 
+        background-color:rgba(217, 217, 217, 0.16);
+        text-decoration:none;
+        color:#1e1e1e; 
+        border: 1px solid #e5e5e5;    
+    }
+
+    .ui-accordion-header-active,.ui-state-focus {
+        outline:none;
+    }
+
+    .ui-accordion-content {
+        padding: 9px 15px;
+    }
+}

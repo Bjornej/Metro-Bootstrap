@@ -28,7 +28,7 @@ Things still missing:
 - well and clearfix
 - jquery ui dialog
 - jquery ui tooltip
-- jquery ui accordion
+- ~~jquery ui accordion~~
 - jquery ui autocomplete
 - shortcuts with icon
 - tiles, badge and slider
