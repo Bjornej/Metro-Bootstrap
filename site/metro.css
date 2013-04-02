@@ -2179,3 +2179,38 @@ button, input[type="button"], a.btn, .ui-button {
   outline: none; }
 .ui-accordion .ui-accordion-content {
   padding: 9px 15px; }
+
+.progress {
+  height: 5px;
+  width: 100%;
+  margin-bottom: 10px; }
+  .progress.progress-primary {
+    background-color: #008287;
+    color: White; }
+  .progress.progress-info {
+    background-color: #2d89ef; }
+  .progress.progress-success {
+    background-color: #00a300; }
+  .progress.progress-warning {
+    background-color: #e3a21a; }
+  .progress.progress-danger {
+    background-color: #b91d47; }
+  .progress .bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+    .progress .bar.bar-primary {
+      background-color: #008287;
+      color: White; }
+    .progress .bar.bar-info {
+      background-color: #2d89ef; }
+    .progress .bar.bar-success {
+      background-color: #00a300; }
+    .progress .bar.bar-warning {
+      background-color: #e3a21a; }
+    .progress .bar.bar-danger {
+      background-color: #b91d47; }
