@@ -2214,3 +2214,28 @@ button, input[type="button"], a.btn, .ui-button {
       background-color: #e3a21a; }
     .progress .bar.bar-danger {
       background-color: #b91d47; }
+
+.typeahead.dropdown-menu, .ui-autocomplete {
+  margin-top: -1px;
+  min-width: 205px;
+  border: 1px solid #eaeaea;
+  list-style-type: none; }
+  .typeahead.dropdown-menu li a, .ui-autocomplete li a {
+    text-decoration: none; }
+    .typeahead.dropdown-menu li a:hover, .ui-autocomplete li a:hover {
+      background-color: #094ab2;
+      color: white; }
+
+.ui-helper-hidden-accessible {
+  display: none; }
+
+.ui-autocomplete {
+  margin-top: -10px; }
+  .ui-autocomplete li {
+    padding: 3px 5px; }
+    .ui-autocomplete li a {
+      display: inline-block;
+      width: 100%; }
+
+.ui-menu {
+  float: left; }

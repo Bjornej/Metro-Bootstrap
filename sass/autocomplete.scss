@@ -1,0 +1,37 @@
+.typeahead.dropdown-menu,.ui-autocomplete {
+    margin-top:-1px;
+    min-width:205px;
+    border:1px solid #eaeaea;
+    list-style-type:none;
+    
+        li {
+            a {
+                text-decoration:none;
+                
+                &:hover {
+                    background-color:$baseColor;
+                    color:white;
+                }
+            }
+        }
+}
+                
+.ui-helper-hidden-accessible {
+    display:none;
+}
+
+.ui-autocomplete {
+    margin-top:-10px;
+    li {
+        padding: 3px 5px;
+        
+        a {
+            display:inline-block;
+            width:100%;
+        }
+    }
+}
+            
+.ui-menu {
+    float:left;    
+}

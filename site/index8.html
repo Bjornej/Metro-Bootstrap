@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Metro  Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="metro.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="">
+          <div class="brand">
+            730 Online
+          </div>
+          <ul class="nav">
+            <li class="active"><a href="#"> <div class="icon-rounded"><i class="icon-plus"></i></div> Home</a></li>
+            <li class="dropdown">
+                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://google.com">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#anotherAction">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+            <li><a href="#">Link</a></li>   
+          </ul>
+            
+            
+        </div>
+        <p class="navbar-text pull-right">
+            terst
+        </p>
+      </div>
+    </div>
+
+      <input type="text" id="prova" /> 
+      
+      <br /><br />
+      
+      <div>
+<input type="text" id="prova2" /> 
+      </div>
+      
+      <script type="text/javascript" src="../jquery.js"></script>
+      <script type="text/javascript" src="../javascript/autocomplete.js"></script>
+            <script type="text/javascript" src="../jqueryui/ui/jquery.ui.core.js"></script>
+      <script type="text/javascript" src="../jqueryui/ui/jquery.ui.widget.js"></script>
+      <script type="text/javascript" src="../jqueryui/ui/jquery.ui.menu.js"></script>
+      <script type="text/javascript" src="../jqueryui/ui/jquery.ui.autocomplete.js"></script>
+      
+         <script type="text/javascript">
+//$("#accordion2").collapse();
+             $( "#prova" ).typeahead( {source : ["prova","prova2","prova3"]});
+             var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#prova2" ).autocomplete({
+      source: availableTags
+    });
+      </script>
+
+
+  </body>

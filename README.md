@@ -24,12 +24,12 @@ Things still missing:
 - hero unit
 - thumbnails 
 - alerts
-- progress bars
+- ~~progress bars~~
 - well and clearfix
 - jquery ui dialog
 - jquery ui tooltip
 - ~~jquery ui accordion~~
-- jquery ui autocomplete
+- ~~jquery ui autocomplete~~
 - shortcuts with icon
 - tiles, badge and slider
 - buttons groups and sets (js)
@@ -38,4 +38,4 @@ Things still missing:
 - slider
 - jquery ui datepicker
 - notices and stickers ( with plugin to show notifications)
-- jquery ui button
+- ~~jquery ui button~~
