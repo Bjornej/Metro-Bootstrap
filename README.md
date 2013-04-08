@@ -26,7 +26,7 @@ Things still missing:
 - alerts
 - ~~progress bars~~
 - well and clearfix
-- jquery ui dialog
+- ~~jquery ui dialog~~
 - jquery ui tooltip
 - ~~jquery ui accordion~~
 - ~~jquery ui autocomplete~~

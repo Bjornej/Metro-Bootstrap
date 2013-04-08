@@ -2239,3 +2239,108 @@ button, input[type="button"], a.btn, .ui-button {
 
 .ui-menu {
   float: left; }
+
+.ui-widget-overlay {
+  background-color: #aaaaaa;
+  opacity: .3;
+  filter: Alpha(Opacity=30);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.ui-widget-content {
+  border: 1px solid #aaaaaa;
+  background-color: #ffffff;
+  color: #222222; }
+
+.modal {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  z-index: 1050;
+  width: 560px;
+  margin-left: -280px;
+  background-color: #ffffff;
+  border: 1px solid #aaaaaa;
+  outline: none;
+  background-clip: padding-box;
+  box-shadow: 2px 2px 3px #aaaaaa; }
+  .modal .modal-header {
+    padding: 0.4em 1em;
+    position: relative; }
+    .modal .modal-header button.close {
+      outline: none;
+      position: absolute;
+      right: .3em;
+      top: -1px;
+      width: 21px;
+      margin: 2px 0 0 0;
+      padding: 1px;
+      height: 20px;
+      min-width: 0;
+      background-color: White; }
+    .modal .modal-header h3 {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 20px;
+      padding: 0;
+      display: inline;
+      margin: 0; }
+  .modal .modal-body {
+    padding: .4em; }
+  .modal .modal-footer {
+    text-align: right;
+    border-top: 1px solid #aaaaaa; }
+    .modal .modal-footer button {
+      margin: 5px; }
+
+.ui-dialog {
+  position: relative;
+  margin: auto auto;
+  outline: none;
+  box-shadow: 2px 2px 3px #aaaaaa; }
+  .ui-dialog .ui-dialog-titlebar {
+    padding: 0.4em 1em;
+    position: relative; }
+    .ui-dialog .ui-dialog-titlebar .ui-dialog-title {
+      float: left;
+      margin-top: -3px;
+      white-space: nowrap;
+      width: 90%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 20px;
+      font-weight: bold; }
+    .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+      outline: none;
+      position: absolute;
+      right: .3em;
+      top: 50%;
+      width: 21px;
+      margin: 2px 0 0 0;
+      padding: 1px;
+      height: 20px;
+      min-width: 0;
+      background-color: White; }
+      .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close .ui-button-icon-primary:before {
+        font-family: FontAwesome;
+        content: "\f00d"; }
+      .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close .ui-button-text {
+        display: none; }
+  .ui-dialog .ui-dialog-content {
+    border: none;
+    padding: 1em;
+    margin-top: 10px; }
+  .ui-dialog .ui-dialog-buttonpane {
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    display: inline-block;
+    width: 100%; }
+    .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+      float: right;
+      padding: 5px 5px 0 5px; }
+      .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button {
+        outline: none;
+        margin: 0 5px; }

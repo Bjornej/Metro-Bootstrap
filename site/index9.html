@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Metro  Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="metro.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="">
+          <div class="brand">
+            730 Online
+          </div>
+          <ul class="nav">
+            <li class="active"><a href="#"> <div class="icon-rounded"><i class="icon-plus"></i></div> Home</a></li>
+            <li class="dropdown">
+                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://google.com">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#anotherAction">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+            <li><a href="#">Link</a></li>   
+          </ul>
+            
+            
+        </div>
+        <p class="navbar-text pull-right">
+            terst
+        </p>
+      </div>
+    </div>
+
+      
+<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+ 
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">Save changes</button>
+  </div>
+</div>
+
+      
+      <script type="text/javascript" src="../jquery.js"></script>
+      <script type="text/javascript" src="../javascript/autocomplete.js"></script>
+      <script type="text/javascript" src="../javascript/dialog.js"></script>
+            <script type="text/javascript" src="../jqueryui/ui/jquery.ui.core.js"></script>
+      <script type="text/javascript" src="../jqueryui/ui/jquery.ui.widget.js"></script>
+      <script type="text/javascript" src="../jqueryui/ui/jquery.ui.menu.js"></script>
+      <script type="text/javascript" src="../jqueryui/ui/jquery.ui.button.js"></script>
+      <script type="text/javascript" src="../jqueryui/ui/jquery.ui.dialog.js"></script>
+      
+         <script type="text/javascript">
+$("<div>dsdsdsdsdsd</div>").dialog({modal:true,title:"proa", buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      }})
+      </script>
+
+
+  </body>
