@@ -2289,7 +2289,7 @@ button, input[type="button"], a.btn, .ui-button {
       display: inline;
       margin: 0; }
   .modal .modal-body {
-    padding: .4em; }
+    padding: 1em; }
   .modal .modal-footer {
     text-align: right;
     border-top: 1px solid #aaaaaa; }
@@ -2344,3 +2344,61 @@ button, input[type="button"], a.btn, .ui-button {
       .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button {
         outline: none;
         margin: 0 5px; }
+
+.tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  font-size: 11px;
+  line-height: 1.4;
+  visibility: visible; }
+  .tooltip .tooltip-inner {
+    max-width: 200px;
+    padding: 8px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000000; }
+  .tooltip.top {
+    padding: 5px 0;
+    margin-top: -3px; }
+    .tooltip.top .tooltip-arrow {
+      bottom: 0;
+      left: 50%;
+      margin-left: -5px;
+      border-top-color: #000000;
+      border-width: 5px 5px 0; }
+  .tooltip.bottom {
+    padding: 5px 0;
+    margin-top: 3px; }
+    .tooltip.bottom .tooltip-arrow {
+      top: 0;
+      left: 50%;
+      margin-left: -5px;
+      border-bottom-color: #000000;
+      border-width: 0 5px 5px; }
+  .tooltip.left {
+    padding: 0 5px;
+    margin-left: -10px; }
+    .tooltip.left .tooltip-arrow {
+      top: 50%;
+      right: 0;
+      margin-top: -5px;
+      border-left-color: #000000;
+      border-width: 5px 0 5px 5px; }
+  .tooltip.right {
+    padding: 0 5px;
+    margin-left: 3px; }
+    .tooltip.right .tooltip-arrow {
+      top: 50%;
+      left: 0;
+      margin-top: -5px;
+      border-right-color: #000000;
+      border-width: 5px 5px 5px 0; }
+
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid; }
