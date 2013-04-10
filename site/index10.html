@@ -56,24 +56,24 @@
       
       
       <div id="test">
-      
+      cffsdfdsf sdf sdf sd f fsdfds df<a href="#" title="Tooltip on top">Tooltip on top</a></li>
+
       </div>
       
       <script type="text/javascript" src="../jquery.js"></script>
-      <script type="text/javascript" src="../javascript/tooltip.js"></script>
 
-      
-         <script type="text/javascript">
-                $("a").tooltip();
-      </script>
 
             <script type="text/javascript" src="../jqueryui/ui/jquery.ui.core.js"></script>
       <script type="text/javascript" src="../jqueryui/ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="../jqueryui/ui/jquery.ui.position.js"></script>
       <script type="text/javascript" src="../jqueryui/ui/jquery.ui.tooltip.js"></script>
 
       
       
          <script type="text/javascript">
-                $("#test a").tooltip();
+                $("#test a").tooltip({
+      position: {
+        my: "center bottom",
+        at: "center top"}});
       </script>
   </body>
