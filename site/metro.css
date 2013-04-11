@@ -2419,3 +2419,54 @@ body .ui-tooltip {
   height: 0;
   border-color: transparent;
   border-style: solid; }
+
+.ui-datepicker {
+  width: 17em;
+  display: none; }
+  .ui-datepicker .ui-datepicker-header {
+    position: relative; }
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
+      float: left;
+      width: 21px;
+      height: 21px;
+      text-align: right; }
+      .ui-datepicker .ui-datepicker-header .ui-datepicker-prev span {
+        display: none; }
+      .ui-datepicker .ui-datepicker-header .ui-datepicker-prev:after {
+        font-family: FontAwesome;
+        content: "\f0d9"; }
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+      float: right;
+      width: 21px;
+      height: 21px; }
+      .ui-datepicker .ui-datepicker-header .ui-datepicker-next span {
+        display: none; }
+      .ui-datepicker .ui-datepicker-header .ui-datepicker-next:after {
+        font-family: FontAwesome;
+        content: "\f0da"; }
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+      text-align: center;
+      font-size: 19px; }
+  .ui-datepicker .ui-datepicker-calendar th {
+    border-right: none; }
+  .ui-datepicker .ui-datepicker-calendar th, .ui-datepicker .ui-datepicker-calendar td {
+    width: 28px;
+    height: 30px;
+    text-align: center;
+    padding: 0; }
+    .ui-datepicker .ui-datepicker-calendar th a, .ui-datepicker .ui-datepicker-calendar td a {
+      color: black;
+      text-decoration: none; }
+  .ui-datepicker .ui-datepicker-calendar td:hover {
+    background-color: #e6e6e6; }
+
+.ui-helper-clearfix {
+  min-height: 0; }
+
+.ui-helper-clearfix:after {
+  clear: both; }
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  border-collapse: collapse; }

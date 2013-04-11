@@ -27,7 +27,7 @@ Things still missing:
 - ~~progress bars~~
 - well and clearfix
 - ~~jquery ui dialog~~
-- jquery ui tooltip
+- ~~jquery ui tooltip~~
 - ~~jquery ui accordion~~
 - ~~jquery ui autocomplete~~
 - shortcuts with icon
@@ -36,6 +36,6 @@ Things still missing:
 - rating(?)
 - list view
 - slider
-- jquery ui datepicker
+- ~~jquery ui datepicker~~
 - notices and stickers ( with plugin to show notifications)
 - ~~jquery ui button~~
