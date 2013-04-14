@@ -2470,3 +2470,37 @@ body .ui-tooltip {
   content: "";
   display: table;
   border-collapse: collapse; }
+
+.label, .badge {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 11.844px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #999999; }
+
+.label.label-success {
+  background-color: #00a300; }
+.label.label-warning {
+  background-color: #e3a21a; }
+.label.label-important {
+  background-color: #b91d47; }
+.label.label-info {
+  background-color: #008287; }
+.label.label-inverse {
+  background-color: Black; }
+
+.badge.badge-success {
+  background-color: #00a300; }
+.badge.badge-warning {
+  background-color: #e3a21a; }
+.badge.badge-important {
+  background-color: #b91d47; }
+.badge.badge-info {
+  background-color: #008287; }
+.badge.badge-inverse {
+  background-color: Black; }

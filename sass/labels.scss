@@ -1,0 +1,56 @@
+.label, .badge {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #999999;
+}
+
+.label {
+    &.label-success {
+        background-color:$successButtonColor;
+    }
+       
+    &.label-warning {
+        background-color:$warningButtonColor;
+    }
+
+    &.label-important {
+        background-color:$dangerButtonColor;
+    }
+
+    &.label-info {
+        background-color:$primaryButtonColor;
+    }
+
+    &.label-inverse {
+        background-color:Black;
+    }
+}
+
+.badge {
+    &.badge-success {
+        background-color:$successButtonColor;
+    }
+       
+    &.badge-warning {
+        background-color:$warningButtonColor;
+    }
+
+    &.badge-important {
+        background-color:$dangerButtonColor;
+    }
+
+    &.badge-info {
+        background-color:$primaryButtonColor;
+    }
+
+    &.badge-inverse {
+        background-color:Black;
+    }
+}
