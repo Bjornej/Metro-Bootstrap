@@ -18,9 +18,9 @@ Things still missing:
 - ~~split button dropdowns~~
 - ~~style jquery ui tabs ( pills and stackable, dropdowns)~~
 - redesign nav list
-- breadcrumbs 
+- ~~breadcrumbs~~ 
 - pagination
-- labels and badges
+- ~~labels and badges~~
 - hero unit
 - thumbnails 
 - alerts
