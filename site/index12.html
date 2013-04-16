@@ -60,6 +60,8 @@
 <span class="badge badge-info">8</span>
 <span class="badge badge-inverse">10</span>
     
+      <br />
+      <br />
       
       <ul class="breadcrumb">
   <li><a href="#">Home</a> <span class="divider">/</span></li>
@@ -67,5 +69,56 @@
   <li class="active">Data</li>
 </ul>
         
-
+<br />
+      <br />
+            
+      <script type="text/javascript" src="../jquery.js"></script>
+                  <script type="text/javascript" src="../jqueryui/ui/jquery.ui.core.js"></script>
+      <script type="text/javascript" src="../jqueryui/ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="../jqueryui/ui/jquery.ui.position.js"></script>
+       <script type="text/javascript" src="../jqueryui/ui/jquery.ui.mouse.js"></script>
+      <script type="text/javascript" src="../jqueryui/ui/jquery.ui.slider.js"></script>
+        <script>
+  $(function() {
+    $( "#slider" ).slider({range:"min"});
+      $( "#slider2" ).slider({range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }});
+      
+      $( "#slider-vertical" ).slider({
+      orientation: "vertical",
+      range: "min",
+      min: 0,
+      max: 100,
+      value: 60,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.value );
+      }
+    });
+      
+      
+      $( "#slider-range" ).slider({
+      orientation: "vertical",
+      range: true,
+      values: [ 17, 67 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+      
+  });
+  </script>
+      <div id="slider"></div>
+      <br />
+        <div id="slider2"></div>   
+      <br />
+      <div id="slider-vertical" style="height: 200px;"></div>
+      
+      <br />
+      <div id="slider-range" style="height: 250px;"></div>
+ 
   </body>

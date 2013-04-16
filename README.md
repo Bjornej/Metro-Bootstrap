@@ -35,7 +35,7 @@ Things still missing:
 - buttons groups and sets (js)
 - rating(?)
 - list view
-- slider
+- ~~slider~~
 - ~~jquery ui datepicker~~
 - notices and stickers ( with plugin to show notifications)
 - ~~jquery ui button~~

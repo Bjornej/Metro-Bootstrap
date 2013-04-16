@@ -1,0 +1,32 @@
+.ui-slider {
+    height:10px;
+    
+    .ui-slider-range {
+        background-color:$primaryButtonColor;
+        height: 10px;
+        position:absolute;
+        display:block;
+        width:10px;
+    }
+    
+    .ui-slider-handle {
+        display:block;
+        width:10px;
+        height:10px;
+        background-color:black; 
+        position:absolute;
+    }    
+}
+        
+.ui-slider-vertical {
+    width:10px;
+    position:relative;
+
+    .ui-slider-handle {
+        margin-bottom:-10px;
+    }
+        
+    .ui-slider-range {
+        bottom:0;
+    }
+}

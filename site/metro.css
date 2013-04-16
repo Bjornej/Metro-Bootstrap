@@ -2520,3 +2520,26 @@ body .ui-tooltip {
       text-decoration: none; }
       .breadcrumb li a:hover {
         text-decoration: underline; }
+
+.ui-slider {
+  height: 10px; }
+  .ui-slider .ui-slider-range {
+    background-color: #008287;
+    height: 10px;
+    position: absolute;
+    display: block;
+    width: 10px; }
+  .ui-slider .ui-slider-handle {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute; }
+
+.ui-slider-vertical {
+  width: 10px;
+  position: relative; }
+  .ui-slider-vertical .ui-slider-handle {
+    margin-bottom: -10px; }
+  .ui-slider-vertical .ui-slider-range {
+    bottom: 0; }
